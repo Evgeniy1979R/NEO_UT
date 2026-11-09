@@ -1,0 +1,3549 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetUnion">
+		<name>ПодключаемыйМодуль</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаНДС</dataPath>
+			<field>СуммаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерСтроки</dataPath>
+			<field>НомерСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сумма</dataPath>
+			<field>Сумма</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаименованиеПолное</dataPath>
+			<field>НаименованиеПолное</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование полное</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтавкаНДС</dataPath>
+			<field>СтавкаНДС</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХарактеристикаНоменклатуры</dataPath>
+			<field>ХарактеристикаНоменклатуры</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Характеристика номенклатуры</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерГТД</dataPath>
+			<field>НомерГТД</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер ГТД</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипЕдиницы</dataPath>
+			<field>ТипЕдиницы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип единицы</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество</dataPath>
+			<field>Количество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Страна</dataPath>
+			<field>Страна</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страна</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕдиницаИзмерения</dataPath>
+			<field>ЕдиницаИзмерения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Единица измерения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Цена</dataPath>
+			<field>Цена</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СерияНоменклатуры</dataPath>
+			<field>СерияНоменклатуры</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Серия номенклатуры</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоДоКорректировки</dataPath>
+			<field>КоличествоДоКорректировки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтавкаНДСДоКорректировки</dataPath>
+			<field>СтавкаНДСДоКорректировки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаДоКорректировки</dataPath>
+			<field>СуммаДоКорректировки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаНДСДоКорректировки</dataPath>
+			<field>СуммаНДСДоКорректировки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаДоКорректировки</dataPath>
+			<field>ЦенаДоКорректировки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>GTIN</dataPath>
+			<field>GTIN</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕдИзмСрокаГодности</dataPath>
+			<field>ЕдИзмСрокаГодности</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КвантПоставки</dataPath>
+			<field>КвантПоставки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодТовараПоставщика</dataPath>
+			<field>КодТовараПоставщика</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоВОдномМесте</dataPath>
+			<field>КоличествоВОдномМесте</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Родитель</dataPath>
+			<field>Родитель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СрокГодности</dataPath>
+			<field>СрокГодности</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РекомендуемаяРозничнаяЦена</dataPath>
+			<field>РекомендуемаяРозничнаяЦена</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоОстаткаНаКонец</dataPath>
+			<field>КоличествоОстаткаНаКонец</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Помещение</dataPath>
+			<field>Помещение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Серия</dataPath>
+			<field>Серия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Склад</dataPath>
+			<field>Склад</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Назначение</dataPath>
+			<field>Назначение</field>
+		</field>
+		<item xsi:type="DataSetUnion">
+			<name>Покупатель</name>
+			<item xsi:type="DataSetUnion">
+				<name>ЗапросОсновнойЦепочки</name>
+				<item xsi:type="DataSetQuery">
+					<name>Заказ_Поступление_СФ</name>
+					<dataSource>ИсточникДанных1</dataSource>
+					<query>ВЫБРАТЬ
+	ЗаказПоставщику.Ссылка КАК PORDERS,
+	ЗаказПоставщику.Ссылка КАК ORDERS,
+	ЗаказПоставщику.Ссылка КАК ORDRSP,
+	ПоступлениеТоваровУслуг.Ссылка КАК DESADV,
+	ПоступлениеТоваровУслуг.Ссылка КАК RECADV,
+	СчетФактураПолученныйДокументыОснования.Ссылка КАК INVOIC
+ИЗ
+	(ВЫБРАТЬ
+		1 КАК Поле1) КАК Заглушка
+		{ПОЛНОЕ СОЕДИНЕНИЕ Документ.СчетФактураПолученный.ДокументыОснования КАК СчетФактураПолученныйДокументыОснования
+			{ПОЛНОЕ СОЕДИНЕНИЕ Документ.ПоступлениеТоваровУслуг КАК ПоступлениеТоваровУслуг
+				{ПОЛНОЕ СОЕДИНЕНИЕ Документ.ЗаказПоставщику КАК ЗаказПоставщику
+				ПО (ПоступлениеТоваровУслуг.Сделка = ЗаказПоставщику.Ссылка)}
+			ПО (СчетФактураПолученныйДокументыОснования.ДокументОснование = ПоступлениеТоваровУслуг.Ссылка)}
+		ПО (ИСТИНА)}</query>
+					<autoFillFields>false</autoFillFields>
+				</item>
+			</item>
+			<item xsi:type="DataSetUnion">
+				<name>ЗапросПоТоварам</name>
+				<item xsi:type="DataSetUnion">
+					<name>_ORDERS_</name>
+					<item xsi:type="DataSetQuery">
+						<name>ЗаказПоставщику</name>
+						<dataSource>ИсточникДанных1</dataSource>
+						<query>ВЫБРАТЬ
+	ЗаказПоставщикуТовары.Номенклатура.Код КАК КодТовараПокупателя,
+	ЗаказПоставщикуТовары.Номенклатура,
+	ЗаказПоставщикуТовары.ХарактеристикаНоменклатуры,
+	ЗаказПоставщикуТовары.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	ЗаказПоставщикуТовары.Номенклатура.Наименование КАК Наименование,
+	ЗаказПоставщикуТовары.Цена,
+	ЗаказПоставщикуТовары.СтавкаНДС,
+	СУММА(ЗаказПоставщикуТовары.Количество) КАК Количество,
+	СУММА(ЗаказПоставщикуТовары.Сумма) КАК Сумма,
+	СУММА(ЗаказПоставщикуТовары.СуммаНДС) КАК СуммаНДС
+ИЗ
+	Документ.ЗаказПоставщику.Товары КАК ЗаказПоставщикуТовары
+ГДЕ
+	ЗаказПоставщикуТовары.Ссылка = &amp;Ссылка
+
+СГРУППИРОВАТЬ ПО
+	ЗаказПоставщикуТовары.Номенклатура,
+	ЗаказПоставщикуТовары.ХарактеристикаНоменклатуры,
+	ЗаказПоставщикуТовары.ЕдиницаИзмерения,
+	ЗаказПоставщикуТовары.Цена,
+	ЗаказПоставщикуТовары.Номенклатура.Наименование,
+	ЗаказПоставщикуТовары.СтавкаНДС,
+	ЗаказПоставщикуТовары.Номенклатура.Код</query>
+						<autoFillFields>false</autoFillFields>
+					</item>
+				</item>
+				<item xsi:type="DataSetUnion">
+					<name>_RECADV_</name>
+					<item xsi:type="DataSetQuery">
+						<name>ПоступлениеТоваровУслуг</name>
+						<dataSource>ИсточникДанных1</dataSource>
+						<query>ВЫБРАТЬ
+	ПоступлениеТоваровУслугТовары.Номенклатура,
+	ПоступлениеТоваровУслугТовары.ХарактеристикаНоменклатуры,
+	ПоступлениеТоваровУслугТовары.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	ПоступлениеТоваровУслугТовары.Номенклатура.Наименование КАК Наименование,
+	ПоступлениеТоваровУслугТовары.Количество КАК Количество,
+	ПоступлениеТоваровУслугТовары.Цена,
+	ПоступлениеТоваровУслугТовары.СтавкаНДС,
+	ПоступлениеТоваровУслугТовары.Сумма,
+	ПоступлениеТоваровУслугТовары.СуммаНДС
+ИЗ
+	Документ.ПоступлениеТоваровУслуг.Товары КАК ПоступлениеТоваровУслугТовары
+ГДЕ
+	ПоступлениеТоваровУслугТовары.Ссылка = &amp;Ссылка</query>
+						<autoFillFields>false</autoFillFields>
+					</item>
+				</item>
+			</item>
+			<item xsi:type="DataSetQuery">
+				<name>КонвертироватьТоварыEDIВ1С</name>
+				<dataSource>ИсточникДанных1</dataSource>
+				<query>ВЫБРАТЬ
+	ТабТоваров.GTIN КАК GTIN,
+	ТабТоваров.КодТовараСторонний КАК КодТовараСторонний,
+	ТабТоваров.КодТовараСвой КАК КодТовараСвой,
+	ТабСоответствий_КонтурEDI.Номенклатура КАК Номенклатура,
+	ТабСоответствий_КонтурEDI.ХарактеристикаНоменклатуры КАК ХарактеристикаНоменклатуры,
+	ТабСоответствий_КонтурEDI.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	ТабСоответствий_КонтурEDI.ТипЕдиницы КАК ТипЕдиницы,
+	4 КАК Приоритет
+ПОМЕСТИТЬ ВТ_НайденныеСоответствия
+ИЗ
+	ТабТоваров КАК ТабТоваров
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ТабСоответствий_КонтурEDI КАК ТабСоответствий_КонтурEDI
+		ПО ТабТоваров.GTIN = ТабСоответствий_КонтурEDI.GTIN
+			И ТабТоваров.КодТовараСторонний = ТабСоответствий_КонтурEDI.КодТовараСторонний
+			И ТабТоваров.КодТовараСвой = ТабСоответствий_КонтурEDI.КодТовараСвой
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ТабТоваров.GTIN,
+	ТабТоваров.КодТовараСторонний,
+	ТабТоваров.КодТовараСвой,
+	Штрихкоды.Номенклатура,
+	Штрихкоды.Характеристика,
+	Штрихкоды.Упаковка,
+	ВЫРАЗИТЬ("" КАК СТРОКА(20)),
+	3
+ИЗ
+	ТабТоваров КАК ТабТоваров
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ШтрихкодыНоменклатуры КАК Штрихкоды
+		ПО (ТабТоваров.GTIN = Штрихкоды.Штрихкод)
+			
+ГДЕ
+	(НЕ ТабТоваров.GTIN = "")
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ТабТоваров.GTIN,
+	ТабТоваров.КодТовараСторонний,
+	ТабТоваров.КодТовараСвой,
+	Штрихкоды.Номенклатура,
+	Штрихкоды.Характеристика,
+	Штрихкоды.Упаковка,
+	ВЫРАЗИТЬ("" КАК СТРОКА(20)),
+	2
+ИЗ
+	ТабТоваров КАК ТабТоваров
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ШтрихкодыНоменклатуры КАК Штрихкоды
+		ПО (ПОДСТРОКА(ТабТоваров.GTIN, 2, 13) = Штрихкоды.Штрихкод)
+			
+ГДЕ
+	(НЕ ТабТоваров.GTIN = "")
+	
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ТабТоваров.GTIN,
+	ТабТоваров.КодТовараСторонний,
+	ТабТоваров.КодТовараСвой,
+	СправочникНоменклатура.Ссылка,
+	НЕОПРЕДЕЛЕНО,
+	СправочникНоменклатура.ЕдиницаИзмерения,
+	ВЫРАЗИТЬ("" КАК СТРОКА(20)),
+	1
+ИЗ
+	ТабТоваров КАК ТабТоваров
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Номенклатура КАК СправочникНоменклатура
+		ПО ТабТоваров.КодТовараСвой = СправочникНоменклатура.Код
+ГДЕ
+	(НЕ ТабТоваров.КодТовараСвой = "")
+</query>
+				<autoFillFields>false</autoFillFields>
+			</item>
+			<item xsi:type="DataSetQuery">
+				<name>КонвертироватьТовары1СВEDIВ_GTIN</name>
+				<dataSource>ИсточникДанных1</dataSource>
+				<query>ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ТабТоваров.Номенклатура,
+	ТабТоваров.ХарактеристикаНоменклатуры,
+	ТабТоваров.ЕдиницаИзмерения,
+	ТабТоваров.Номенклатура.Код КАК КодТовараСвой,
+	ВЫРАЗИТЬ(Штрихкоды.Штрихкод КАК СТРОКА(14)) КАК GTIN
+ПОМЕСТИТЬ ВТШтрихкодыТоваров
+ИЗ
+	ТабТоваров КАК ТабТоваров
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.Штрихкоды КАК Штрихкоды
+		ПО ТабТоваров.Номенклатура = Штрихкоды.Владелец
+			И ТабТоваров.ХарактеристикаНоменклатуры = Штрихкоды.ХарактеристикаНоменклатуры
+			И ТабТоваров.ЕдиницаИзмерения = Штрихкоды.ЕдиницаИзмерения
+			И (Штрихкоды.ТипШтрихкода = ЗНАЧЕНИЕ(ПланВидовХарактеристик.ТипыШтрихкодов.EAN13))
+ГДЕ
+	&amp;ИскатьТоварПоШК
+
+ИНДЕКСИРОВАТЬ ПО
+	ТабТоваров.Номенклатура,
+	ТабТоваров.ХарактеристикаНоменклатуры,
+	ТабТоваров.ЕдиницаИзмерения</query>
+				<autoFillFields>false</autoFillFields>
+			</item>
+		</item>
+		<item xsi:type="DataSetUnion">
+			<name>Поставщик</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаНДС</dataPath>
+				<field>СуммаНДС</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НомерСтроки</dataPath>
+				<field>НомерСтроки</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Сумма</dataPath>
+				<field>Сумма</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Наименование</dataPath>
+				<field>Наименование</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Наименование</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НаименованиеПолное</dataPath>
+				<field>НаименованиеПолное</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Наименование полное</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтавкаНДС</dataPath>
+				<field>СтавкаНДС</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ХарактеристикаНоменклатуры</dataPath>
+				<field>ХарактеристикаНоменклатуры</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Характеристика номенклатуры</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НомерГТД</dataPath>
+				<field>НомерГТД</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Номер ГТД</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТипЕдиницы</dataPath>
+				<field>ТипЕдиницы</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Тип единицы</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Количество</dataPath>
+				<field>Количество</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Страна</dataPath>
+				<field>Страна</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Страна</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЕдиницаИзмерения</dataPath>
+				<field>ЕдиницаИзмерения</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Единица измерения</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Номенклатура</dataPath>
+				<field>Номенклатура</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Цена</dataPath>
+				<field>Цена</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СерияНоменклатуры</dataPath>
+				<field>СерияНоменклатуры</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Серия номенклатуры</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоДоКорректировки</dataPath>
+				<field>КоличествоДоКорректировки</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтавкаНДСДоКорректировки</dataPath>
+				<field>СтавкаНДСДоКорректировки</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаДоКорректировки</dataPath>
+				<field>СуммаДоКорректировки</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаНДСДоКорректировки</dataPath>
+				<field>СуммаНДСДоКорректировки</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЦенаДоКорректировки</dataPath>
+				<field>ЦенаДоКорректировки</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>GTIN</dataPath>
+				<field>GTIN</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЕдИзмСрокаГодности</dataPath>
+				<field>ЕдИзмСрокаГодности</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КвантПоставки</dataPath>
+				<field>КвантПоставки</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КодТовараПоставщика</dataPath>
+				<field>КодТовараПоставщика</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоВОдномМесте</dataPath>
+				<field>КоличествоВОдномМесте</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Родитель</dataPath>
+				<field>Родитель</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СрокГодности</dataPath>
+				<field>СрокГодности</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>РекомендуемаяРозничнаяЦена</dataPath>
+				<field>РекомендуемаяРозничнаяЦена</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоОстаткаНаКонец</dataPath>
+				<field>КоличествоОстаткаНаКонец</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Помещение</dataPath>
+				<field>Помещение</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Серия</dataPath>
+				<field>Серия</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Склад</dataPath>
+				<field>Склад</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Характеристика</dataPath>
+				<field>Характеристика</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Назначение</dataPath>
+				<field>Назначение</field>
+			</field>
+			<item xsi:type="DataSetUnion">
+				<name>ЗапросОсновнойЦепочки</name>
+				<item xsi:type="DataSetQuery">
+					<name>Заказ_Реализация_СФ</name>
+					<dataSource>ИсточникДанных1</dataSource>
+					<query>ВЫБРАТЬ
+	докЗаказПокупателя.Ссылка КАК PORDERS,
+	докЗаказПокупателя.Ссылка КАК ORDERS,
+	докЗаказПокупателя.Ссылка КАК ORDRSP,
+	докРеализацияТоваровУслуг.Ссылка КАК DESADV,
+	докРеализацияТоваровУслуг.Ссылка КАК RECADV,
+	СчетФактураВыданный.Ссылка КАК INVOIC
+ИЗ
+	(ВЫБРАТЬ
+		1 КАК Поле1) КАК Заглушка
+		{ПОЛНОЕ СОЕДИНЕНИЕ Документ.СчетФактураВыданный КАК СчетФактураВыданный
+			{ПОЛНОЕ СОЕДИНЕНИЕ Документ.РеализацияТоваровУслуг КАК докРеализацияТоваровУслуг
+				{ПОЛНОЕ СОЕДИНЕНИЕ Документ.ЗаказКлиента КАК докЗаказПокупателя
+				ПО докРеализацияТоваровУслуг.ЗаказКлиента = докЗаказПокупателя.Ссылка}
+			ПО СчетФактураВыданный.ДокументОснование = докРеализацияТоваровУслуг.Ссылка}
+		ПО (ИСТИНА)}</query>
+					<autoFillFields>false</autoFillFields>
+				</item>
+				<item xsi:type="DataSetQuery">
+					<name>Реализация_СФ</name>
+					<dataSource>ИсточникДанных1</dataSource>
+					<query>ВЫБРАТЬ
+	РеализацияТоваровУслуг.Ссылка КАК PORDERS,
+	РеализацияТоваровУслуг.Ссылка КАК ORDERS,
+	РеализацияТоваровУслуг.Ссылка КАК ORDRSP,
+	РеализацияТоваровУслуг.Ссылка КАК DESADV,
+	РеализацияТоваровУслуг.Ссылка КАК RECADV,
+	СчетФактураВыданный.Ссылка КАК INVOIC
+ИЗ
+	(ВЫБРАТЬ
+		1 КАК Поле1) КАК Заглушка
+		{ПОЛНОЕ СОЕДИНЕНИЕ Документ.СчетФактураВыданный КАК СчетФактураВыданный
+			{ПОЛНОЕ СОЕДИНЕНИЕ Документ.РеализацияТоваровУслуг КАК РеализацияТоваровУслуг
+			ПО (СчетФактураВыданный.ДокументОснование = РеализацияТоваровУслуг.Ссылка)}
+		ПО (ИСТИНА)}</query>
+					<autoFillFields>false</autoFillFields>
+				</item>
+				<item xsi:type="DataSetQuery">
+					<name>Заказ_Реализация</name>
+					<dataSource>ИсточникДанных1</dataSource>
+					<query>ВЫБРАТЬ
+	докЗаказПокупателя.Ссылка КАК PORDERS,
+	докЗаказПокупателя.Ссылка КАК ORDERS,
+	докЗаказПокупателя.Ссылка КАК ORDRSP,
+	докРеализацияТоваровУслуг.Ссылка КАК DESADV,
+	докРеализацияТоваровУслуг.Ссылка КАК RECADV,
+	докРеализацияТоваровУслуг.Ссылка КАК INVOIC
+ИЗ
+	(ВЫБРАТЬ
+		1 КАК Поле1) КАК Заглушка
+		{ПОЛНОЕ СОЕДИНЕНИЕ Документ.РеализацияТоваровУслуг КАК докРеализацияТоваровУслуг
+			{ПОЛНОЕ СОЕДИНЕНИЕ Документ.ЗаказКлиента КАК докЗаказПокупателя
+			ПО (докРеализацияТоваровУслуг.ЗаказКлиента = докЗаказПокупателя.Ссылка)}
+		ПО (ИСТИНА)}</query>
+					<autoFillFields>false</autoFillFields>
+				</item>
+				<item xsi:type="DataSetQuery">
+					<name>Реализация</name>
+					<dataSource>ИсточникДанных1</dataSource>
+					<query>ВЫБРАТЬ
+	РеализацияТоваровУслуг.Ссылка КАК PORDERS,
+	РеализацияТоваровУслуг.Ссылка КАК ORDERS,
+	РеализацияТоваровУслуг.Ссылка КАК ORDRSP,
+	РеализацияТоваровУслуг.Ссылка КАК DESADV,
+	РеализацияТоваровУслуг.Ссылка КАК RECADV,
+	РеализацияТоваровУслуг.Ссылка КАК INVOIC
+ИЗ
+	(ВЫБРАТЬ
+		1 КАК Поле1) КАК Заглушка
+		{ПОЛНОЕ СОЕДИНЕНИЕ Документ.РеализацияТоваровУслуг КАК РеализацияТоваровУслуг
+		ПО (ИСТИНА)}</query>
+					<autoFillFields>false</autoFillFields>
+				</item>
+			</item>
+			<item xsi:type="DataSetUnion">
+				<name>ЗапросПоТоварам</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>СуммаНДС</dataPath>
+					<field>СуммаНДС</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>НомерСтроки</dataPath>
+					<field>НомерСтроки</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Сумма</dataPath>
+					<field>Сумма</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Наименование</dataPath>
+					<field>Наименование</field>
+					<title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>НаименованиеПолное</dataPath>
+					<field>НаименованиеПолное</field>
+					<title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование полное</v8:content>
+						</v8:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>СтавкаНДС</dataPath>
+					<field>СтавкаНДС</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ХарактеристикаНоменклатуры</dataPath>
+					<field>ХарактеристикаНоменклатуры</field>
+					<title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Характеристика номенклатуры</v8:content>
+						</v8:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>НомерГТД</dataPath>
+					<field>НомерГТД</field>
+					<title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер ГТД</v8:content>
+						</v8:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ТипЕдиницы</dataPath>
+					<field>ТипЕдиницы</field>
+					<title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип единицы</v8:content>
+						</v8:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Количество</dataPath>
+					<field>Количество</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Страна</dataPath>
+					<field>Страна</field>
+					<title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страна</v8:content>
+						</v8:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ЕдиницаИзмерения</dataPath>
+					<field>ЕдиницаИзмерения</field>
+					<title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Единица измерения</v8:content>
+						</v8:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Номенклатура</dataPath>
+					<field>Номенклатура</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Цена</dataPath>
+					<field>Цена</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>СерияНоменклатуры</dataPath>
+					<field>СерияНоменклатуры</field>
+					<title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Серия номенклатуры</v8:content>
+						</v8:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>КоличествоДоКорректировки</dataPath>
+					<field>КоличествоДоКорректировки</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>СтавкаНДСДоКорректировки</dataPath>
+					<field>СтавкаНДСДоКорректировки</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>СуммаДоКорректировки</dataPath>
+					<field>СуммаДоКорректировки</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>СуммаНДСДоКорректировки</dataPath>
+					<field>СуммаНДСДоКорректировки</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ЦенаДоКорректировки</dataPath>
+					<field>ЦенаДоКорректировки</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>GTIN</dataPath>
+					<field>GTIN</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ЕдИзмСрокаГодности</dataPath>
+					<field>ЕдИзмСрокаГодности</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>КвантПоставки</dataPath>
+					<field>КвантПоставки</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>КодТовараПоставщика</dataPath>
+					<field>КодТовараПоставщика</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>КоличествоВОдномМесте</dataPath>
+					<field>КоличествоВОдномМесте</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Родитель</dataPath>
+					<field>Родитель</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>СрокГодности</dataPath>
+					<field>СрокГодности</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>РекомендуемаяРозничнаяЦена</dataPath>
+					<field>РекомендуемаяРозничнаяЦена</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>КоличествоОстаткаНаКонец</dataPath>
+					<field>КоличествоОстаткаНаКонец</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Помещение</dataPath>
+					<field>Помещение</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Серия</dataPath>
+					<field>Серия</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Склад</dataPath>
+					<field>Склад</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Характеристика</dataPath>
+					<field>Характеристика</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Назначение</dataPath>
+					<field>Назначение</field>
+				</field>
+				<item xsi:type="DataSetUnion">
+					<name>_PORDERS_ORDRSP_</name>
+					<item xsi:type="DataSetQuery">
+						<name>ЗаказКлиента</name>
+						<dataSource>ИсточникДанных1</dataSource>
+						<query>ВЫБРАТЬ
+	ЗаказПокупателяТовары.Номенклатура,
+	ЗаказПокупателяТовары.Характеристика КАК ХарактеристикаНоменклатуры,
+	ВЫБОР
+		КОГДА ЗаказПокупателяТовары.Упаковка = ЗНАЧЕНИЕ(Справочник.УпаковкиНоменклатуры.ПустаяСсылка)
+			ТОГДА ЗаказПокупателяТовары.Номенклатура.ЕдиницаИзмерения
+		ИНАЧЕ ЗаказПокупателяТовары.Упаковка
+	КОНЕЦ КАК ЕдиницаИзмерения,
+	ЗаказПокупателяТовары.Цена,
+	ЗаказПокупателяТовары.СтавкаНДС,
+	ВЫБОР
+		КОГДА ЗаказПокупателяТовары.Отменено
+			ТОГДА 0
+		ИНАЧЕ ЗаказПокупателяТовары.КоличествоУпаковок
+	КОНЕЦ КАК Количество,
+	ЗаказПокупателяТовары.Сумма КАК Сумма,
+	ЗаказПокупателяТовары.СуммаНДС КАК СуммаНДС,
+	ВЫБОР
+		КОГДА ЗаказПокупателяТовары.Номенклатура.ТипНоменклатуры = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Услуга)
+			ТОГДА "Services"
+		ИНАЧЕ ""
+	КОНЕЦ КАК ТипЕдиницы
+ИЗ
+	Документ.ЗаказКлиента.Товары КАК ЗаказПокупателяТовары
+ГДЕ
+	ЗаказПокупателяТовары.Ссылка В(&amp;Ссылка)
+	И НЕ ЗаказПокупателяТовары.Отменено
+	И (НЕ ЗаказПокупателяТовары.Номенклатура.ТипНоменклатуры = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Услуга)
+			ИЛИ &amp;РаботаСУслугами)
+	И НЕ ЗаказПокупателяТовары.ВариантОбеспечения = ЗНАЧЕНИЕ(Перечисление.ВариантыОбеспечения.Нетребуется)</query>
+						<autoFillFields>false</autoFillFields>
+					</item>
+					<item xsi:type="DataSetQuery">
+						<name>РеализацияТоваровУслуг</name>
+						<dataSource>ИсточникДанных1</dataSource>
+						<query>ВЫБРАТЬ
+	РеализацияТоваровУслугТовары.НомерСтроки,
+	РеализацияТоваровУслугТовары.Номенклатура,
+	РеализацияТоваровУслугТовары.Характеристика КАК ХарактеристикаНоменклатуры,
+	ВЫБОР
+		КОГДА РеализацияТоваровУслугТовары.Упаковка = ЗНАЧЕНИЕ(Справочник.УпаковкиНоменклатуры.ПустаяСсылка)
+			ТОГДА РеализацияТоваровУслугТовары.Номенклатура.ЕдиницаИзмерения
+		ИНАЧЕ РеализацияТоваровУслугТовары.Упаковка
+	КОНЕЦ КАК ЕдиницаИзмерения,
+	РеализацияТоваровУслугТовары.Номенклатура.Наименование КАК Наименование,
+	РеализацияТоваровУслугТовары.Номенклатура.НаименованиеПолное КАК НаименованиеПолное,
+	РеализацияТоваровУслугТовары.Цена,
+	РеализацияТоваровУслугТовары.СтавкаНДС,
+	ЗНАЧЕНИЕ(Справочник.СерииНоменклатуры.ПустаяСсылка) КАК СерияНоменклатуры,
+	ЗНАЧЕНИЕ(Справочник.СтраныМира.ПустаяСсылка) КАК Страна,
+	"" КАК НомерГТД,
+	РеализацияТоваровУслугТовары.КоличествоУпаковок КАК Количество,
+	РеализацияТоваровУслугТовары.Сумма КАК Сумма,
+	РеализацияТоваровУслугТовары.СуммаНДС,
+	ВЫБОР
+		КОГДА РеализацияТоваровУслугТовары.Номенклатура.ТипНоменклатуры = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Услуга)
+			ТОГДА "Services"
+		ИНАЧЕ ""
+	КОНЕЦ КАК ТипЕдиницы
+ИЗ
+	Документ.РеализацияТоваровУслуг.Товары КАК РеализацияТоваровУслугТовары
+ГДЕ
+	РеализацияТоваровУслугТовары.Ссылка В(&amp;Ссылка)
+	И (НЕ РеализацияТоваровУслугТовары.Номенклатура.ТипНоменклатуры = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Услуга)
+			ИЛИ &amp;РаботаСУслугами)</query>
+						<autoFillFields>false</autoFillFields>
+					</item>
+				</item>
+				<item xsi:type="DataSetUnion">
+					<name>_DESADV_INVOIC_</name>
+					<item xsi:type="DataSetQuery">
+						<name>РеализацияТоваровУслуг_Проведен</name>
+						<dataSource>ИсточникДанных1</dataSource>
+						<query>ВЫБРАТЬ
+	РеализацияТоваровУслугТовары.НомерСтроки,
+	РеализацияТоваровУслугТовары.Номенклатура КАК Номенклатура,
+	РеализацияТоваровУслугТовары.Характеристика КАК ХарактеристикаНоменклатуры,
+	ВЫБОР
+		КОГДА РеализацияТоваровУслугТовары.Упаковка = ЗНАЧЕНИЕ(Справочник.УпаковкиНоменклатуры.ПустаяСсылка)
+			ТОГДА РеализацияТоваровУслугТовары.Номенклатура.ЕдиницаИзмерения
+		ИНАЧЕ РеализацияТоваровУслугТовары.Упаковка
+	КОНЕЦ КАК ЕдиницаИзмерения,
+	РеализацияТоваровУслугТовары.Номенклатура.Наименование КАК Наименование,
+	РеализацияТоваровУслугТовары.Номенклатура.НаименованиеПолное КАК НаименованиеПолное,
+	РеализацияТоваровУслугТовары.Цена,
+	РеализацияТоваровУслугТовары.СтавкаНДС,
+	ЗНАЧЕНИЕ(Справочник.СерииНоменклатуры.ПустаяСсылка) КАК СерияНоменклатуры,
+	ЗНАЧЕНИЕ(Справочник.СтраныМира.ПустаяСсылка) КАК Страна,
+	"" КАК НомерГТД,
+	РеализацияТоваровУслугТовары.КоличествоУпаковок КАК Количество,
+	РеализацияТоваровУслугТовары.Сумма КАК Сумма,
+	РеализацияТоваровУслугТовары.СуммаНДС,
+	ВЫБОР
+		КОГДА РеализацияТоваровУслугТовары.Номенклатура.ТипНоменклатуры = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Услуга)
+			ТОГДА "Services"
+		ИНАЧЕ ""
+	КОНЕЦ КАК ТипЕдиницы
+ИЗ
+	Документ.РеализацияТоваровУслуг.Товары КАК РеализацияТоваровУслугТовары
+ГДЕ
+	РеализацияТоваровУслугТовары.Ссылка В(&amp;Ссылка)
+	И (НЕ РеализацияТоваровУслугТовары.Номенклатура.ТипНоменклатуры = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Услуга)
+			ИЛИ &amp;РаботаСУслугами)</query>
+						<autoFillFields>false</autoFillFields>
+					</item>
+					<item xsi:type="DataSetQuery">
+						<name>РеализацияТоваровУслуг_НеПроведен</name>
+						<dataSource>ИсточникДанных1</dataSource>
+						<query>ВЫБРАТЬ
+	РеализацияТоваровУслугТовары.НомерСтроки,
+	РеализацияТоваровУслугТовары.Номенклатура КАК Номенклатура,
+	РеализацияТоваровУслугТовары.Характеристика КАК ХарактеристикаНоменклатуры,
+	ВЫБОР
+		КОГДА РеализацияТоваровУслугТовары.Упаковка = ЗНАЧЕНИЕ(Справочник.УпаковкиНоменклатуры.ПустаяСсылка)
+			ТОГДА РеализацияТоваровУслугТовары.Номенклатура.ЕдиницаИзмерения
+		ИНАЧЕ РеализацияТоваровУслугТовары.Упаковка
+	КОНЕЦ КАК ЕдиницаИзмерения,
+	РеализацияТоваровУслугТовары.Номенклатура.Наименование КАК Наименование,
+	РеализацияТоваровУслугТовары.Номенклатура.НаименованиеПолное КАК НаименованиеПолное,
+	РеализацияТоваровУслугТовары.Цена,
+	РеализацияТоваровУслугТовары.СтавкаНДС,
+	ЗНАЧЕНИЕ(Справочник.СерииНоменклатуры.ПустаяСсылка) КАК СерияНоменклатуры,
+	ЗНАЧЕНИЕ(Справочник.СтраныМира.ПустаяСсылка) КАК Страна,
+	"" КАК НомерГТД,
+	РеализацияТоваровУслугТовары.КоличествоУпаковок КАК Количество,
+	РеализацияТоваровУслугТовары.Сумма КАК Сумма,
+	РеализацияТоваровУслугТовары.СуммаНДС,
+	ВЫБОР
+		КОГДА РеализацияТоваровУслугТовары.Номенклатура.ТипНоменклатуры = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Услуга)
+			ТОГДА "Services"
+		ИНАЧЕ ""
+	КОНЕЦ КАК ТипЕдиницы
+ИЗ
+	Документ.РеализацияТоваровУслуг.Товары КАК РеализацияТоваровУслугТовары
+ГДЕ
+	РеализацияТоваровУслугТовары.Ссылка В(&amp;Ссылка)
+	И (НЕ РеализацияТоваровУслугТовары.Номенклатура.ТипНоменклатуры = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Услуга)
+			ИЛИ &amp;РаботаСУслугами)</query>
+						<autoFillFields>false</autoFillFields>
+					</item>
+				</item>
+				<item xsi:type="DataSetUnion">
+					<name>_RETINS_RETREC_</name>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>СуммаНДС</dataPath>
+						<field>СуммаНДС</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>НомерСтроки</dataPath>
+						<field>НомерСтроки</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Сумма</dataPath>
+						<field>Сумма</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Наименование</dataPath>
+						<field>Наименование</field>
+						<title xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Наименование</v8:content>
+							</v8:item>
+						</title>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>НаименованиеПолное</dataPath>
+						<field>НаименованиеПолное</field>
+						<title xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Наименование полное</v8:content>
+							</v8:item>
+						</title>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>СтавкаНДС</dataPath>
+						<field>СтавкаНДС</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>ХарактеристикаНоменклатуры</dataPath>
+						<field>ХарактеристикаНоменклатуры</field>
+						<title xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Характеристика номенклатуры</v8:content>
+							</v8:item>
+						</title>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>НомерГТД</dataPath>
+						<field>НомерГТД</field>
+						<title xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Номер ГТД</v8:content>
+							</v8:item>
+						</title>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>ТипЕдиницы</dataPath>
+						<field>ТипЕдиницы</field>
+						<title xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тип единицы</v8:content>
+							</v8:item>
+						</title>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Количество</dataPath>
+						<field>Количество</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Страна</dataPath>
+						<field>Страна</field>
+						<title xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Страна</v8:content>
+							</v8:item>
+						</title>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>ЕдиницаИзмерения</dataPath>
+						<field>ЕдиницаИзмерения</field>
+						<title xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Единица измерения</v8:content>
+							</v8:item>
+						</title>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Номенклатура</dataPath>
+						<field>Номенклатура</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Цена</dataPath>
+						<field>Цена</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>СерияНоменклатуры</dataPath>
+						<field>СерияНоменклатуры</field>
+						<title xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Серия номенклатуры</v8:content>
+							</v8:item>
+						</title>
+					</field>
+					<item xsi:type="DataSetQuery">
+						<name>ВозвратТоваровОтКлиента</name>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СуммаНДС</dataPath>
+							<field>СуммаНДС</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>НомерСтроки</dataPath>
+							<field>НомерСтроки</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Сумма</dataPath>
+							<field>Сумма</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Наименование</dataPath>
+							<field>Наименование</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наименование</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>НаименованиеПолное</dataPath>
+							<field>НаименованиеПолное</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наименование полное</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СтавкаНДС</dataPath>
+							<field>СтавкаНДС</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>ХарактеристикаНоменклатуры</dataPath>
+							<field>ХарактеристикаНоменклатуры</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Характеристика номенклатуры</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>НомерГТД</dataPath>
+							<field>НомерГТД</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номер ГТД</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>ТипЕдиницы</dataPath>
+							<field>ТипЕдиницы</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тип единицы</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Количество</dataPath>
+							<field>Количество</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Страна</dataPath>
+							<field>Страна</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страна</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>ЕдиницаИзмерения</dataPath>
+							<field>ЕдиницаИзмерения</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Единица измерения</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Номенклатура</dataPath>
+							<field>Номенклатура</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Цена</dataPath>
+							<field>Цена</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СерияНоменклатуры</dataPath>
+							<field>СерияНоменклатуры</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Серия номенклатуры</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<dataSource>ИсточникДанных1</dataSource>
+						<query>ВЫБРАТЬ
+	ВозвратТоваровОтКлиентаТовары.НомерСтроки,
+	ВозвратТоваровОтКлиентаТовары.Номенклатура,
+	ВозвратТоваровОтКлиентаТовары.Характеристика КАК ХарактеристикаНоменклатуры,
+	ВЫБОР
+		КОГДА ВозвратТоваровОтКлиентаТовары.Упаковка = ЗНАЧЕНИЕ(Справочник.УпаковкиНоменклатуры.ПустаяСсылка)
+			ТОГДА ВозвратТоваровОтКлиентаТовары.Номенклатура.ЕдиницаИзмерения
+		ИНАЧЕ ВозвратТоваровОтКлиентаТовары.Упаковка
+	КОНЕЦ КАК ЕдиницаИзмерения,
+	ВозвратТоваровОтКлиентаТовары.Номенклатура.Наименование КАК Наименование,
+	ВозвратТоваровОтКлиентаТовары.Номенклатура.НаименованиеПолное КАК НаименованиеПолное,
+	ВозвратТоваровОтКлиентаТовары.Цена,
+	ВозвратТоваровОтКлиентаТовары.СтавкаНДС,
+	Неопределено КАК СерияНоменклатуры,
+	Неопределено КАК Страна,
+	Неопределено КАК НомерГТД,
+	ВозвратТоваровОтКлиентаТовары.КоличествоУпаковок КАК Количество,
+	ВозвратТоваровОтКлиентаТовары.Сумма,
+	ВозвратТоваровОтКлиентаТовары.СуммаНДС,
+	"" КАК ТипЕдиницы
+ИЗ
+	Документ.ВозвратТоваровОтКлиента.Товары КАК ВозвратТоваровОтКлиентаТовары
+ГДЕ
+	ВозвратТоваровОтКлиентаТовары.Ссылка В(&amp;Ссылка)</query>
+					</item>
+					<item xsi:type="DataSetQuery">
+						<name>ПоступлениеТоваровУслуг</name>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СуммаНДС</dataPath>
+							<field>СуммаНДС</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>НомерСтроки</dataPath>
+							<field>НомерСтроки</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Сумма</dataPath>
+							<field>Сумма</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Наименование</dataPath>
+							<field>Наименование</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наименование</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>НаименованиеПолное</dataPath>
+							<field>НаименованиеПолное</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наименование полное</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СтавкаНДС</dataPath>
+							<field>СтавкаНДС</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>ХарактеристикаНоменклатуры</dataPath>
+							<field>ХарактеристикаНоменклатуры</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Характеристика номенклатуры</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>НомерГТД</dataPath>
+							<field>НомерГТД</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номер ГТД</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>ТипЕдиницы</dataPath>
+							<field>ТипЕдиницы</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тип единицы</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Количество</dataPath>
+							<field>Количество</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Страна</dataPath>
+							<field>Страна</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страна</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>ЕдиницаИзмерения</dataPath>
+							<field>ЕдиницаИзмерения</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Единица измерения</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Номенклатура</dataPath>
+							<field>Номенклатура</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Цена</dataPath>
+							<field>Цена</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СерияНоменклатуры</dataPath>
+							<field>СерияНоменклатуры</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Серия номенклатуры</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<dataSource>ИсточникДанных1</dataSource>
+						<query>ВЫБРАТЬ
+	ПоступлениеТоваровУслугТовары.НомерСтроки,
+	ПоступлениеТоваровУслугТовары.Номенклатура,
+	ПоступлениеТоваровУслугТовары.Характеристика КАК ХарактеристикаНоменклатуры,
+	ВЫБОР
+		КОГДА ПоступлениеТоваровУслугТовары.Упаковка = ЗНАЧЕНИЕ(Справочник.УпаковкиНоменклатуры.ПустаяСсылка)
+			ТОГДА ПоступлениеТоваровУслугТовары.Номенклатура.ЕдиницаИзмерения
+		ИНАЧЕ ПоступлениеТоваровУслугТовары.Упаковка
+	КОНЕЦ КАК ЕдиницаИзмерения,
+	ПоступлениеТоваровУслугТовары.Номенклатура.Наименование КАК Наименование,
+	ПоступлениеТоваровУслугТовары.Номенклатура.НаименованиеПолное КАК НаименованиеПолное,
+	ПоступлениеТоваровУслугТовары.Цена,
+	ПоступлениеТоваровУслугТовары.СтавкаНДС,
+	Неопределено КАК СерияНоменклатуры,
+	Неопределено КАК Страна,
+	Неопределено КАК НомерГТД,
+	ПоступлениеТоваровУслугТовары.КоличествоУпаковок КАК Количество,
+	ПоступлениеТоваровУслугТовары.Сумма,
+	ПоступлениеТоваровУслугТовары.СуммаНДС,
+	"" КАК ТипЕдиницы
+ИЗ
+	Документ.ПоступлениеТоваровУслуг.Товары КАК ПоступлениеТоваровУслугТовары
+ГДЕ
+	ПоступлениеТоваровУслугТовары.Ссылка В(&amp;Ссылка)</query>
+					</item>
+					<item xsi:type="DataSetQuery">
+						<name>ПриобретениеТоваровУслуг</name>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СуммаНДС</dataPath>
+							<field>СуммаНДС</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>НомерСтроки</dataPath>
+							<field>НомерСтроки</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Сумма</dataPath>
+							<field>Сумма</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Наименование</dataPath>
+							<field>Наименование</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наименование</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>НаименованиеПолное</dataPath>
+							<field>НаименованиеПолное</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наименование полное</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СтавкаНДС</dataPath>
+							<field>СтавкаНДС</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>ХарактеристикаНоменклатуры</dataPath>
+							<field>ХарактеристикаНоменклатуры</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Характеристика номенклатуры</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>НомерГТД</dataPath>
+							<field>НомерГТД</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номер ГТД</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>ТипЕдиницы</dataPath>
+							<field>ТипЕдиницы</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тип единицы</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Количество</dataPath>
+							<field>Количество</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Страна</dataPath>
+							<field>Страна</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страна</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>ЕдиницаИзмерения</dataPath>
+							<field>ЕдиницаИзмерения</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Единица измерения</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Номенклатура</dataPath>
+							<field>Номенклатура</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Цена</dataPath>
+							<field>Цена</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СерияНоменклатуры</dataPath>
+							<field>СерияНоменклатуры</field>
+							<title xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Серия номенклатуры</v8:content>
+								</v8:item>
+							</title>
+						</field>
+						<dataSource>ИсточникДанных1</dataSource>
+						<query>ВЫБРАТЬ
+	ПоступлениеТоваровУслугТовары.НомерСтроки,
+	ПоступлениеТоваровУслугТовары.Номенклатура,
+	ПоступлениеТоваровУслугТовары.Характеристика КАК ХарактеристикаНоменклатуры,
+	ВЫБОР
+		КОГДА ПоступлениеТоваровУслугТовары.Упаковка = ЗНАЧЕНИЕ(Справочник.УпаковкиЕдиницыИзмерения.ПустаяСсылка)
+			ТОГДА ПоступлениеТоваровУслугТовары.Номенклатура.ЕдиницаИзмерения
+		ИНАЧЕ ПоступлениеТоваровУслугТовары.Упаковка
+	КОНЕЦ КАК ЕдиницаИзмерения,
+	ПоступлениеТоваровУслугТовары.Номенклатура.Наименование КАК Наименование,
+	ПоступлениеТоваровУслугТовары.Номенклатура.НаименованиеПолное КАК НаименованиеПолное,
+	ПоступлениеТоваровУслугТовары.Цена,
+	ПоступлениеТоваровУслугТовары.СтавкаНДС,
+	Неопределено КАК СерияНоменклатуры,
+	Неопределено КАК Страна,
+	Неопределено КАК НомерГТД,
+	ПоступлениеТоваровУслугТовары.КоличествоУпаковок КАК Количество,
+	ПоступлениеТоваровУслугТовары.Сумма,
+	ПоступлениеТоваровУслугТовары.СуммаНДС,
+	"" КАК ТипЕдиницы
+ИЗ
+	Документ.ПриобретениеТоваровУслуг.Товары КАК ПоступлениеТоваровУслугТовары
+ГДЕ
+	ПоступлениеТоваровУслугТовары.Ссылка В(&amp;Ссылка)</query>
+					</item>
+				</item>
+				<item xsi:type="DataSetUnion">
+					<name>_COINVOIC_IINVOIC_</name>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>ЕдиницаИзмерения</dataPath>
+						<field>ЕдиницаИзмерения</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Количество</dataPath>
+						<field>Количество</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>КоличествоДоКорректировки</dataPath>
+						<field>КоличествоДоКорректировки</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Номенклатура</dataPath>
+						<field>Номенклатура</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>НомерГТД</dataPath>
+						<field>НомерГТД</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>СерияНоменклатуры</dataPath>
+						<field>СерияНоменклатуры</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>СтавкаНДС</dataPath>
+						<field>СтавкаНДС</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>СтавкаНДСДоКорректировки</dataPath>
+						<field>СтавкаНДСДоКорректировки</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Страна</dataPath>
+						<field>Страна</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Сумма</dataPath>
+						<field>Сумма</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>СуммаДоКорректировки</dataPath>
+						<field>СуммаДоКорректировки</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>СуммаНДС</dataPath>
+						<field>СуммаНДС</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>СуммаНДСДоКорректировки</dataPath>
+						<field>СуммаНДСДоКорректировки</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>ХарактеристикаНоменклатуры</dataPath>
+						<field>ХарактеристикаНоменклатуры</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Цена</dataPath>
+						<field>Цена</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>ЦенаДоКорректировки</dataPath>
+						<field>ЦенаДоКорректировки</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Наименование</dataPath>
+						<field>Наименование</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>НаименованиеПолное</dataPath>
+						<field>НаименованиеПолное</field>
+					</field>
+					<item xsi:type="DataSetQuery">
+						<name>КорректировкаРеализации</name>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>ЕдиницаИзмерения</dataPath>
+							<field>ЕдиницаИзмерения</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Количество</dataPath>
+							<field>Количество</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>КоличествоДоКорректировки</dataPath>
+							<field>КоличествоДоКорректировки</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Номенклатура</dataPath>
+							<field>Номенклатура</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>НомерГТД</dataPath>
+							<field>НомерГТД</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СерияНоменклатуры</dataPath>
+							<field>СерияНоменклатуры</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СтавкаНДС</dataPath>
+							<field>СтавкаНДС</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СтавкаНДСДоКорректировки</dataPath>
+							<field>СтавкаНДСДоКорректировки</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Страна</dataPath>
+							<field>Страна</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Сумма</dataPath>
+							<field>Сумма</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СуммаДоКорректировки</dataPath>
+							<field>СуммаДоКорректировки</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СуммаНДС</dataPath>
+							<field>СуммаНДС</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СуммаНДСДоКорректировки</dataPath>
+							<field>СуммаНДСДоКорректировки</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>ХарактеристикаНоменклатуры</dataPath>
+							<field>ХарактеристикаНоменклатуры</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Цена</dataPath>
+							<field>Цена</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>ЦенаДоКорректировки</dataPath>
+							<field>ЦенаДоКорректировки</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Наименование</dataPath>
+							<field>Наименование</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>НаименованиеПолное</dataPath>
+							<field>НаименованиеПолное</field>
+						</field>
+						<dataSource>ИсточникДанных1</dataSource>
+						<query>ВЫБРАТЬ
+	докКорректировка.Ссылка КАК Корректировка,
+	докКорректировка.ДокументОснование КАК ДокументРеализации,
+	докКорректировка.Дата КАК ДатаКорректировки
+ПОМЕСТИТЬ табКорректировки
+ИЗ
+	Документ.КорректировкаРеализации КАК докКорректировка
+ГДЕ
+	докКорректировка.Ссылка = &amp;Ссылка
+
+СГРУППИРОВАТЬ ПО
+	докКорректировка.Ссылка,
+	докКорректировка.ДокументОснование,
+	докКорректировка.Дата
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	табКорректировки.Корректировка КАК Корректировка,
+	КорректировкаРеализации.Ссылка КАК ПредыдущаяКорректировка,
+	КорректировкаРеализации.Дата КАК ДатаПредыдущейКорректировки
+ПОМЕСТИТЬ табВсехПредыдущихКорректировок
+ИЗ
+	табКорректировки КАК табКорректировки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.КорректировкаРеализации КАК КорректировкаРеализации
+		ПО табКорректировки.ДокументРеализации = КорректировкаРеализации.ДокументОснование
+			И табКорректировки.Корректировка &lt;&gt; КорректировкаРеализации.Ссылка
+			И табКорректировки.ДатаКорректировки &gt;= КорректировкаРеализации.Дата
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	РеализацияТоваровУслугТовары.Номенклатура КАК Номенклатура,
+	РеализацияТоваровУслугТовары.Характеристика КАК ХарактеристикаНоменклатуры,
+	ВЫБОР
+		КОГДА РеализацияТоваровУслугТовары.Упаковка = ЗНАЧЕНИЕ(Справочник.УпаковкиНоменклатуры.ПустаяСсылка)
+			ТОГДА РеализацияТоваровУслугТовары.Номенклатура.ЕдиницаИзмерения
+		ИНАЧЕ РеализацияТоваровУслугТовары.Упаковка
+	КОНЕЦ КАК ЕдиницаИзмерения,
+	РеализацияТоваровУслугТовары.Номенклатура.Наименование КАК Наименование,
+	ПОДСТРОКА(РеализацияТоваровУслугТовары.Номенклатура.НаименованиеПолное, 0, 500) КАК НаименованиеПолное,
+	РеализацияТоваровУслугТовары.СтавкаНДС КАК СтавкаНДС,
+	ЗНАЧЕНИЕ(Справочник.СерииНоменклатуры.ПустаяСсылка) КАК СерияНоменклатуры,
+	РеализацияТоваровУслугТовары.НомерГТД.СтранаПроисхождения КАК Страна,
+	РеализацияТоваровУслугТовары.НомерГТД.Код КАК НомерГТД,
+	СУММА(РеализацияТоваровУслугТовары.КоличествоУпаковок) КАК Количество,
+	СУММА(РеализацияТоваровУслугТовары.СуммаСНДС) КАК Сумма,
+	СУММА(РеализацияТоваровУслугТовары.СуммаНДС) КАК СуммаНДС,
+	"" КАК ТипЕдиницы,
+	РеализацияТоваровУслугТовары.Ссылка КАК Ссылка
+ПОМЕСТИТЬ ПервичныйДокументВидыЗапасов
+ИЗ
+	табКорректировки КАК табКорректировки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.РеализацияТоваровУслуг.ВидыЗапасов КАК РеализацияТоваровУслугТовары
+		ПО табКорректировки.ДокументРеализации = РеализацияТоваровУслугТовары.Ссылка
+ГДЕ
+	РеализацияТоваровУслугТовары.Ссылка В
+			(ВЫБРАТЬ
+				табКорректировки.ДокументРеализации
+			ИЗ
+				табКорректировки КАК табКорректировки)
+
+СГРУППИРОВАТЬ ПО
+	РеализацияТоваровУслугТовары.Номенклатура,
+	РеализацияТоваровУслугТовары.Характеристика,
+	ВЫБОР
+		КОГДА РеализацияТоваровУслугТовары.Упаковка = ЗНАЧЕНИЕ(Справочник.УпаковкиНоменклатуры.ПустаяСсылка)
+			ТОГДА РеализацияТоваровУслугТовары.Номенклатура.ЕдиницаИзмерения
+		ИНАЧЕ РеализацияТоваровУслугТовары.Упаковка
+	КОНЕЦ,
+	РеализацияТоваровУслугТовары.Номенклатура.Наименование,
+	ПОДСТРОКА(РеализацияТоваровУслугТовары.Номенклатура.НаименованиеПолное, 0, 500),
+	РеализацияТоваровУслугТовары.СтавкаНДС,
+	РеализацияТоваровУслугТовары.НомерГТД.СтранаПроисхождения,
+	РеализацияТоваровУслугТовары.НомерГТД.Код,
+	РеализацияТоваровУслугТовары.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.Номенклатура КАК Номенклатура,
+	КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.Характеристика КАК ХарактеристикаНоменклатуры,
+	ЗНАЧЕНИЕ(Справочник.СерииНоменклатуры.ПустаяСсылка) КАК СерияНоменклатуры,
+	КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.НомерГТД.Код КАК НомерГТД,
+	КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.НомерГТД.СтранаПроисхождения КАК Страна,
+	ВЫБОР
+		КОГДА КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.Упаковка = ЗНАЧЕНИЕ(Справочник.УпаковкиНоменклатуры.ПустаяСсылка)
+			ТОГДА КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.Номенклатура.ЕдиницаИзмерения
+		ИНАЧЕ КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.Упаковка
+	КОНЕЦ КАК ЕдиницаИзмерения,
+	КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.Номенклатура.Наименование КАК Наименование,
+	ПОДСТРОКА(КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.Номенклатура.НаименованиеПолное, 0, 500) КАК НаименованиеПолное,
+	КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.СтавкаНДС КАК СтавкаНДСДоКорректировки,
+	КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.СуммаСНДС КАК СуммаСНДСДоКорректировки,
+	КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.СуммаНДС КАК СуммаНДСДоКорректировки,
+	0 КАК КоличествоДоКорректировки,
+	КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.Ссылка КАК Ссылка
+ПОМЕСТИТЬ табСборкаПредудущихДанных
+ИЗ
+	Документ.КорректировкаРеализации.ВидыЗапасовКорректировкаВыручки КАК КорректировкаРеализацииВидыЗапасовКорректировкаВыручки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ табВсехПредыдущихКорректировок КАК табВсехПредыдущихКорректировок
+		ПО КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.Ссылка = табВсехПредыдущихКорректировок.ПредыдущаяКорректировка
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	КорректировкаРеализацииВидыЗапасовОприходование.Номенклатура,
+	КорректировкаРеализацииВидыЗапасовОприходование.Характеристика,
+	ЗНАЧЕНИЕ(Справочник.СерииНоменклатуры.ПустаяСсылка),
+	КорректировкаРеализацииВидыЗапасовОприходование.НомерГТД.Код,
+	КорректировкаРеализацииВидыЗапасовОприходование.НомерГТД.СтранаПроисхождения,
+	ВЫБОР
+		КОГДА КорректировкаРеализацииВидыЗапасовОприходование.Упаковка = ЗНАЧЕНИЕ(Справочник.УпаковкиНоменклатуры.ПустаяСсылка)
+			ТОГДА КорректировкаРеализацииВидыЗапасовОприходование.Номенклатура.ЕдиницаИзмерения
+		ИНАЧЕ КорректировкаРеализацииВидыЗапасовОприходование.Упаковка
+	КОНЕЦ,
+	КорректировкаРеализацииВидыЗапасовОприходование.Номенклатура.Наименование,
+	ПОДСТРОКА(КорректировкаРеализацииВидыЗапасовОприходование.Номенклатура.НаименованиеПолное, 0, 500),
+	КорректировкаРеализацииВидыЗапасовОприходование.СтавкаНДС,
+	-КорректировкаРеализацииВидыЗапасовОприходование.СуммаСНДС,
+	-КорректировкаРеализацииВидыЗапасовОприходование.СуммаНДС,
+	-КорректировкаРеализацииВидыЗапасовОприходование.КоличествоУпаковок,
+	КорректировкаРеализацииВидыЗапасовОприходование.Ссылка
+ИЗ
+	Документ.КорректировкаРеализации.ВидыЗапасовОприходование КАК КорректировкаРеализацииВидыЗапасовОприходование
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ табВсехПредыдущихКорректировок КАК табВсехПредыдущихКорректировок
+		ПО КорректировкаРеализацииВидыЗапасовОприходование.Ссылка = табВсехПредыдущихКорректировок.ПредыдущаяКорректировка
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	КорректировкаРеализацииВидыЗапасовСписание.Номенклатура,
+	КорректировкаРеализацииВидыЗапасовСписание.Характеристика,
+	ЗНАЧЕНИЕ(Справочник.СерииНоменклатуры.ПустаяСсылка),
+	КорректировкаРеализацииВидыЗапасовСписание.НомерГТД.Код,
+	КорректировкаРеализацииВидыЗапасовСписание.НомерГТД.СтранаПроисхождения,
+	ВЫБОР
+		КОГДА КорректировкаРеализацииВидыЗапасовСписание.Упаковка = ЗНАЧЕНИЕ(Справочник.УпаковкиНоменклатуры.ПустаяСсылка)
+			ТОГДА КорректировкаРеализацииВидыЗапасовСписание.Номенклатура.ЕдиницаИзмерения
+		ИНАЧЕ КорректировкаРеализацииВидыЗапасовСписание.Упаковка
+	КОНЕЦ,
+	КорректировкаРеализацииВидыЗапасовСписание.Номенклатура.Наименование,
+	ПОДСТРОКА(КорректировкаРеализацииВидыЗапасовСписание.Номенклатура.НаименованиеПолное, 0, 500),
+	КорректировкаРеализацииВидыЗапасовСписание.СтавкаНДС,
+	КорректировкаРеализацииВидыЗапасовСписание.СуммаСНДС,
+	КорректировкаРеализацииВидыЗапасовСписание.СуммаНДС,
+	КорректировкаРеализацииВидыЗапасовСписание.КоличествоУпаковок,
+	КорректировкаРеализацииВидыЗапасовСписание.Ссылка
+ИЗ
+	Документ.КорректировкаРеализации.ВидыЗапасовСписание КАК КорректировкаРеализацииВидыЗапасовСписание
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ табВсехПредыдущихКорректировок КАК табВсехПредыдущихКорректировок
+		ПО КорректировкаРеализацииВидыЗапасовСписание.Ссылка = табВсехПредыдущихКорректировок.ПредыдущаяКорректировка
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ПервичныйДокументВидыЗапасов.Номенклатура,
+	ПервичныйДокументВидыЗапасов.ХарактеристикаНоменклатуры,
+	ПервичныйДокументВидыЗапасов.СерияНоменклатуры,
+	ПервичныйДокументВидыЗапасов.НомерГТД,
+	ПервичныйДокументВидыЗапасов.Страна,
+	ПервичныйДокументВидыЗапасов.ЕдиницаИзмерения,
+	ПервичныйДокументВидыЗапасов.Наименование,
+	ПервичныйДокументВидыЗапасов.НаименованиеПолное,
+	ПервичныйДокументВидыЗапасов.СтавкаНДС,
+	ПервичныйДокументВидыЗапасов.Сумма,
+	ПервичныйДокументВидыЗапасов.СуммаНДС,
+	ПервичныйДокументВидыЗапасов.Количество,
+	ПервичныйДокументВидыЗапасов.Ссылка
+ИЗ
+	ПервичныйДокументВидыЗапасов КАК ПервичныйДокументВидыЗапасов
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	табСборкаПредудущихДанных.Номенклатура КАК Номенклатура,
+	табСборкаПредудущихДанных.ХарактеристикаНоменклатуры КАК ХарактеристикаНоменклатуры,
+	табСборкаПредудущихДанных.СерияНоменклатуры КАК СерияНоменклатуры,
+	табСборкаПредудущихДанных.НомерГТД КАК НомерГТД,
+	табСборкаПредудущихДанных.Страна КАК Страна,
+	табСборкаПредудущихДанных.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	табСборкаПредудущихДанных.Наименование КАК Наименование,
+	табСборкаПредудущихДанных.НаименованиеПолное КАК НаименованиеПолное,
+	табСборкаПредудущихДанных.СтавкаНДСДоКорректировки КАК СтавкаНДС,
+	табСборкаПредудущихДанных.СуммаСНДСДоКорректировки КАК СуммаСНДС,
+	табСборкаПредудущихДанных.СуммаНДСДоКорректировки КАК СуммаНДС,
+	табСборкаПредудущихДанных.КоличествоДоКорректировки КАК Количество,
+	табСборкаПредудущихДанных.Ссылка КАК Ссылка
+ПОМЕСТИТЬ табСборкаДанныхТекущейКорректировки
+ИЗ
+	табСборкаПредудущихДанных КАК табСборкаПредудущихДанных
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.Номенклатура,
+	КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.Характеристика,
+	ЗНАЧЕНИЕ(Справочник.СерииНоменклатуры.ПустаяСсылка),
+	КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.НомерГТД.Код,
+	КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.НомерГТД.СтранаПроисхождения,
+	ВЫБОР
+		КОГДА КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.Упаковка = ЗНАЧЕНИЕ(Справочник.УпаковкиНоменклатуры.ПустаяСсылка)
+			ТОГДА КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.Номенклатура.ЕдиницаИзмерения
+		ИНАЧЕ КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.Упаковка
+	КОНЕЦ,
+	КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.Номенклатура.Наименование,
+	ПОДСТРОКА(КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.Номенклатура.НаименованиеПолное, 0, 500),
+	КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.СтавкаНДС,
+	КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.СуммаСНДС,
+	КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.СуммаНДС,
+	0,
+	КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.Ссылка
+ИЗ
+	Документ.КорректировкаРеализации.ВидыЗапасовКорректировкаВыручки КАК КорректировкаРеализацииВидыЗапасовКорректировкаВыручки
+ГДЕ
+	КорректировкаРеализацииВидыЗапасовКорректировкаВыручки.Ссылка = &amp;Ссылка
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	КорректировкаРеализацииВидыЗапасовОприходование.Номенклатура,
+	КорректировкаРеализацииВидыЗапасовОприходование.Характеристика,
+	ЗНАЧЕНИЕ(Справочник.СерииНоменклатуры.ПустаяСсылка),
+	КорректировкаРеализацииВидыЗапасовОприходование.НомерГТД.Код,
+	КорректировкаРеализацииВидыЗапасовОприходование.НомерГТД.СтранаПроисхождения,
+	ВЫБОР
+		КОГДА КорректировкаРеализацииВидыЗапасовОприходование.Упаковка = ЗНАЧЕНИЕ(Справочник.УпаковкиНоменклатуры.ПустаяСсылка)
+			ТОГДА КорректировкаРеализацииВидыЗапасовОприходование.Номенклатура.ЕдиницаИзмерения
+		ИНАЧЕ КорректировкаРеализацииВидыЗапасовОприходование.Упаковка
+	КОНЕЦ,
+	КорректировкаРеализацииВидыЗапасовОприходование.Номенклатура.Наименование,
+	ПОДСТРОКА(КорректировкаРеализацииВидыЗапасовОприходование.Номенклатура.НаименованиеПолное, 0, 500),
+	КорректировкаРеализацииВидыЗапасовОприходование.СтавкаНДС,
+	-КорректировкаРеализацииВидыЗапасовОприходование.СуммаСНДС,
+	-КорректировкаРеализацииВидыЗапасовОприходование.СуммаНДС,
+	-КорректировкаРеализацииВидыЗапасовОприходование.КоличествоУпаковок,
+	КорректировкаРеализацииВидыЗапасовОприходование.Ссылка
+ИЗ
+	Документ.КорректировкаРеализации.ВидыЗапасовОприходование КАК КорректировкаРеализацииВидыЗапасовОприходование
+ГДЕ
+	КорректировкаРеализацииВидыЗапасовОприходование.Ссылка = &amp;Ссылка
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	КорректировкаРеализацииВидыЗапасовСписание.Номенклатура,
+	КорректировкаРеализацииВидыЗапасовСписание.Характеристика,
+	ЗНАЧЕНИЕ(Справочник.СерииНоменклатуры.ПустаяСсылка),
+	КорректировкаРеализацииВидыЗапасовСписание.НомерГТД.Код,
+	КорректировкаРеализацииВидыЗапасовСписание.НомерГТД.СтранаПроисхождения,
+	ВЫБОР
+		КОГДА КорректировкаРеализацииВидыЗапасовСписание.Упаковка = ЗНАЧЕНИЕ(Справочник.УпаковкиНоменклатуры.ПустаяСсылка)
+			ТОГДА КорректировкаРеализацииВидыЗапасовСписание.Номенклатура.ЕдиницаИзмерения
+		ИНАЧЕ КорректировкаРеализацииВидыЗапасовСписание.Упаковка
+	КОНЕЦ,
+	КорректировкаРеализацииВидыЗапасовСписание.Номенклатура.Наименование,
+	ПОДСТРОКА(КорректировкаРеализацииВидыЗапасовСписание.Номенклатура.НаименованиеПолное, 0, 500),
+	КорректировкаРеализацииВидыЗапасовСписание.СтавкаНДС,
+	КорректировкаРеализацииВидыЗапасовСписание.СуммаСНДС,
+	КорректировкаРеализацииВидыЗапасовСписание.СуммаНДС,
+	КорректировкаРеализацииВидыЗапасовСписание.КоличествоУпаковок,
+	КорректировкаРеализацииВидыЗапасовСписание.Ссылка
+ИЗ
+	Документ.КорректировкаРеализации.ВидыЗапасовСписание КАК КорректировкаРеализацииВидыЗапасовСписание
+ГДЕ
+	КорректировкаРеализацииВидыЗапасовСписание.Ссылка = &amp;Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	табСборкаДанныхТекущейКорректировки.Номенклатура КАК Номенклатура,
+	табСборкаДанныхТекущейКорректировки.ХарактеристикаНоменклатуры КАК ХарактеристикаНоменклатуры,
+	табСборкаДанныхТекущейКорректировки.СерияНоменклатуры КАК СерияНоменклатуры,
+	табСборкаДанныхТекущейКорректировки.НомерГТД КАК НомерГТД,
+	табСборкаДанныхТекущейКорректировки.Страна КАК Страна,
+	табСборкаДанныхТекущейКорректировки.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	табСборкаДанныхТекущейКорректировки.Наименование КАК Наименование,
+	табСборкаДанныхТекущейКорректировки.НаименованиеПолное КАК НаименованиеПолное,
+	табСборкаДанныхТекущейКорректировки.СтавкаНДС КАК СтавкаНДС,
+	СУММА(табСборкаДанныхТекущейКорректировки.СуммаСНДС) КАК СуммаСНДС,
+	СУММА(табСборкаДанныхТекущейКорректировки.СуммаНДС) КАК СуммаНДС,
+	СУММА(табСборкаДанныхТекущейКорректировки.Количество) КАК Количество,
+	ВЫРАЗИТЬ(ВЫБОР
+			КОГДА СУММА(табСборкаДанныхТекущейКорректировки.Количество) = 0
+				ТОГДА 0
+			ИНАЧЕ СУММА(табСборкаДанныхТекущейКорректировки.СуммаСНДС) / СУММА(табСборкаДанныхТекущейКорректировки.Количество)
+		КОНЕЦ КАК ЧИСЛО(15, 2)) КАК Цена
+ПОМЕСТИТЬ СвернутаяТаблицаТекущейКорректировки
+ИЗ
+	табСборкаДанныхТекущейКорректировки КАК табСборкаДанныхТекущейКорректировки
+
+СГРУППИРОВАТЬ ПО
+	табСборкаДанныхТекущейКорректировки.Номенклатура,
+	табСборкаДанныхТекущейКорректировки.ХарактеристикаНоменклатуры,
+	табСборкаДанныхТекущейКорректировки.СерияНоменклатуры,
+	табСборкаДанныхТекущейКорректировки.НомерГТД,
+	табСборкаДанныхТекущейКорректировки.Страна,
+	табСборкаДанныхТекущейКорректировки.ЕдиницаИзмерения,
+	табСборкаДанныхТекущейКорректировки.Наименование,
+	табСборкаДанныхТекущейКорректировки.НаименованиеПолное,
+	табСборкаДанныхТекущейКорректировки.СтавкаНДС
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	табСборкаПредудущихДанных.Номенклатура КАК Номенклатура,
+	табСборкаПредудущихДанных.ХарактеристикаНоменклатуры КАК ХарактеристикаНоменклатуры,
+	табСборкаПредудущихДанных.СерияНоменклатуры КАК СерияНоменклатуры,
+	табСборкаПредудущихДанных.НомерГТД КАК НомерГТД,
+	табСборкаПредудущихДанных.Страна КАК Страна,
+	табСборкаПредудущихДанных.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	табСборкаПредудущихДанных.Наименование КАК Наименование,
+	табСборкаПредудущихДанных.НаименованиеПолное КАК НаименованиеПолное,
+	табСборкаПредудущихДанных.СтавкаНДСДоКорректировки КАК СтавкаНДСДоКорректировки,
+	СУММА(табСборкаПредудущихДанных.СуммаСНДСДоКорректировки) КАК СуммаСНДСДоКорректировки,
+	СУММА(табСборкаПредудущихДанных.СуммаНДСДоКорректировки) КАК СуммаНДСДоКорректировки,
+	СУММА(табСборкаПредудущихДанных.КоличествоДоКорректировки) КАК КоличествоДоКорректировки,
+	ВЫРАЗИТЬ(ВЫБОР
+			КОГДА СУММА(табСборкаПредудущихДанных.КоличествоДоКорректировки) = 0
+				ТОГДА 0
+			ИНАЧЕ СУММА(табСборкаПредудущихДанных.СуммаСНДСДоКорректировки) / СУММА(табСборкаПредудущихДанных.КоличествоДоКорректировки)
+		КОНЕЦ КАК ЧИСЛО(15, 2)) КАК ЦенаДоКорректировки
+ПОМЕСТИТЬ СвернутаяТаблицаПредыдущихДанных
+ИЗ
+	табСборкаПредудущихДанных КАК табСборкаПредудущихДанных
+
+СГРУППИРОВАТЬ ПО
+	табСборкаПредудущихДанных.Номенклатура,
+	табСборкаПредудущихДанных.ХарактеристикаНоменклатуры,
+	табСборкаПредудущихДанных.СерияНоменклатуры,
+	табСборкаПредудущихДанных.НомерГТД,
+	табСборкаПредудущихДанных.Страна,
+	табСборкаПредудущихДанных.ЕдиницаИзмерения,
+	табСборкаПредудущихДанных.Наименование,
+	табСборкаПредудущихДанных.НаименованиеПолное,
+	табСборкаПредудущихДанных.СтавкаНДСДоКорректировки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.Номенклатура, СвернутаяТаблицаПредыдущихДанных.Номенклатура) КАК Номенклатура,
+	ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.ХарактеристикаНоменклатуры, СвернутаяТаблицаПредыдущихДанных.ХарактеристикаНоменклатуры) КАК ХарактеристикаНоменклатуры,
+	ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.СерияНоменклатуры, СвернутаяТаблицаПредыдущихДанных.СерияНоменклатуры) КАК СерияНоменклатуры,
+	ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.НомерГТД, СвернутаяТаблицаПредыдущихДанных.НомерГТД) КАК НомерГТД,
+	ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.Страна, СвернутаяТаблицаПредыдущихДанных.Страна) КАК Страна,
+	ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.ЕдиницаИзмерения, СвернутаяТаблицаПредыдущихДанных.ЕдиницаИзмерения) КАК ЕдиницаИзмерения,
+	ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.Наименование, СвернутаяТаблицаПредыдущихДанных.Наименование) КАК Наименование,
+	ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.НаименованиеПолное, СвернутаяТаблицаПредыдущихДанных.НаименованиеПолное) КАК НаименованиеПолное,
+	СвернутаяТаблицаТекущейКорректировки.СтавкаНДС КАК СтавкаНДС,
+	СУММА(ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.СуммаСНДС, 0)) КАК СуммаСНДС,
+	СУММА(ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.СуммаНДС, 0)) КАК СуммаНДС,
+	СУММА(ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.Количество, 0)) КАК Количество,
+	ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.Цена, 0) КАК Цена,
+	СвернутаяТаблицаПредыдущихДанных.СтавкаНДСДоКорректировки КАК СтавкаНДСДоКорректировки,
+	СУММА(ЕСТЬNULL(СвернутаяТаблицаПредыдущихДанных.СуммаСНДСДоКорректировки, 0)) КАК СуммаСНДСДоКорректировки,
+	СУММА(ЕСТЬNULL(СвернутаяТаблицаПредыдущихДанных.СуммаНДСДоКорректировки, 0)) КАК СуммаНДСДоКорректировки,
+	СУММА(ЕСТЬNULL(СвернутаяТаблицаПредыдущихДанных.КоличествоДоКорректировки, 0)) КАК КоличествоДоКорректировки,
+	ЕСТЬNULL(СвернутаяТаблицаПредыдущихДанных.ЦенаДоКорректировки, 0) КАК ЦенаДоКорректировки
+ПОМЕСТИТЬ табДанные
+ИЗ
+	СвернутаяТаблицаТекущейКорректировки КАК СвернутаяТаблицаТекущейКорректировки
+		ПОЛНОЕ СОЕДИНЕНИЕ СвернутаяТаблицаПредыдущихДанных КАК СвернутаяТаблицаПредыдущихДанных
+		ПО СвернутаяТаблицаТекущейКорректировки.Номенклатура = СвернутаяТаблицаПредыдущихДанных.Номенклатура
+			И СвернутаяТаблицаТекущейКорректировки.ХарактеристикаНоменклатуры = СвернутаяТаблицаПредыдущихДанных.ХарактеристикаНоменклатуры
+			И СвернутаяТаблицаТекущейКорректировки.СерияНоменклатуры = СвернутаяТаблицаПредыдущихДанных.СерияНоменклатуры
+			И СвернутаяТаблицаТекущейКорректировки.НомерГТД = СвернутаяТаблицаПредыдущихДанных.НомерГТД
+			И СвернутаяТаблицаТекущейКорректировки.Страна = СвернутаяТаблицаПредыдущихДанных.Страна
+ГДЕ
+	(СвернутаяТаблицаПредыдущихДанных.КоличествоДоКорректировки &gt; 0
+			ИЛИ СвернутаяТаблицаТекущейКорректировки.Количество &gt; 0)
+
+СГРУППИРОВАТЬ ПО
+	ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.Номенклатура, СвернутаяТаблицаПредыдущихДанных.Номенклатура),
+	ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.ХарактеристикаНоменклатуры, СвернутаяТаблицаПредыдущихДанных.ХарактеристикаНоменклатуры),
+	ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.СерияНоменклатуры, СвернутаяТаблицаПредыдущихДанных.СерияНоменклатуры),
+	ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.НомерГТД, СвернутаяТаблицаПредыдущихДанных.НомерГТД),
+	ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.Страна, СвернутаяТаблицаПредыдущихДанных.Страна),
+	ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.ЕдиницаИзмерения, СвернутаяТаблицаПредыдущихДанных.ЕдиницаИзмерения),
+	ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.Наименование, СвернутаяТаблицаПредыдущихДанных.Наименование),
+	ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.НаименованиеПолное, СвернутаяТаблицаПредыдущихДанных.НаименованиеПолное),
+	СвернутаяТаблицаПредыдущихДанных.СтавкаНДСДоКорректировки,
+	СвернутаяТаблицаТекущейКорректировки.СтавкаНДС,
+	ЕСТЬNULL(СвернутаяТаблицаПредыдущихДанных.ЦенаДоКорректировки, 0),
+	ЕСТЬNULL(СвернутаяТаблицаТекущейКорректировки.Цена, 0)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	табДанные.Номенклатура КАК Номенклатура,
+	табДанные.ХарактеристикаНоменклатуры КАК ХарактеристикаНоменклатуры,
+	ВЫБОР
+		КОГДА &amp;СворачиватьСтроки
+			ТОГДА НЕОПРЕДЕЛЕНО
+		ИНАЧЕ табДанные.СерияНоменклатуры
+	КОНЕЦ КАК СерияНоменклатуры,
+	ВЫБОР
+		КОГДА &amp;ТипСообщения = "INVOIC"
+			ТОГДА табДанные.НомерГТД
+		ИНАЧЕ ""
+	КОНЕЦ КАК НомерГТД,
+	ВЫБОР
+		КОГДА &amp;ТипСообщения = "INVOIC"
+			ТОГДА табДанные.Страна
+		ИНАЧЕ ""
+	КОНЕЦ КАК Страна,
+	табДанные.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	табДанные.Наименование КАК Наименование,
+	табДанные.НаименованиеПолное КАК НаименованиеПолное,
+	МАКСИМУМ(табДанные.СтавкаНДС) КАК СтавкаНДС,
+	СУММА(табДанные.СуммаСНДС) КАК Сумма,
+	СУММА(табДанные.СуммаНДС) КАК СуммаНДС,
+	СУММА(табДанные.Количество) КАК Количество,
+	МАКСИМУМ(табДанные.Цена) КАК Цена,
+	МАКСИМУМ(табДанные.СтавкаНДСДоКорректировки) КАК СтавкаНДСДоКорректировки,
+	СУММА(табДанные.СуммаСНДСДоКорректировки) КАК СуммаДоКорректировки,
+	СУММА(табДанные.СуммаНДСДоКорректировки) КАК СуммаНДСДоКорректировки,
+	СУММА(табДанные.КоличествоДоКорректировки) КАК КоличествоДоКорректировки,
+	МАКСИМУМ(табДанные.ЦенаДоКорректировки) КАК ЦенаДоКорректировки
+ИЗ
+	табДанные КАК табДанные
+
+СГРУППИРОВАТЬ ПО
+	табДанные.Номенклатура,
+	табДанные.ХарактеристикаНоменклатуры,
+	табДанные.ЕдиницаИзмерения,
+	табДанные.Наименование,
+	табДанные.НаименованиеПолное,
+	ВЫБОР
+		КОГДА &amp;СворачиватьСтроки
+			ТОГДА НЕОПРЕДЕЛЕНО
+		ИНАЧЕ табДанные.СерияНоменклатуры
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА &amp;ТипСообщения = "INVOIC"
+			ТОГДА табДанные.НомерГТД
+		ИНАЧЕ ""
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА &amp;ТипСообщения = "INVOIC"
+			ТОГДА табДанные.Страна
+		ИНАЧЕ ""
+	КОНЕЦ</query>
+					</item>
+				</item>
+				<item xsi:type="DataSetUnion">
+					<name>_PRICELIST_</name>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>GTIN</dataPath>
+						<field>GTIN</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>ЕдИзмСрокаГодности</dataPath>
+						<field>ЕдИзмСрокаГодности</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>ЕдиницаИзмерения</dataPath>
+						<field>ЕдиницаИзмерения</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>КвантПоставки</dataPath>
+						<field>КвантПоставки</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>КодТовараПоставщика</dataPath>
+						<field>КодТовараПоставщика</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>КоличествоВОдномМесте</dataPath>
+						<field>КоличествоВОдномМесте</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Наименование</dataPath>
+						<field>Наименование</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Номенклатура</dataPath>
+						<field>Номенклатура</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Родитель</dataPath>
+						<field>Родитель</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>СрокГодности</dataPath>
+						<field>СрокГодности</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>СтавкаНДС</dataPath>
+						<field>СтавкаНДС</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Страна</dataPath>
+						<field>Страна</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Цена</dataPath>
+						<field>Цена</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>РекомендуемаяРозничнаяЦена</dataPath>
+						<field>РекомендуемаяРозничнаяЦена</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>КоличествоОстаткаНаКонец</dataPath>
+						<field>КоличествоОстаткаНаКонец</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Помещение</dataPath>
+						<field>Помещение</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Серия</dataPath>
+						<field>Серия</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Склад</dataPath>
+						<field>Склад</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Характеристика</dataPath>
+						<field>Характеристика</field>
+					</field>
+					<field xsi:type="DataSetFieldField">
+						<dataPath>Назначение</dataPath>
+						<field>Назначение</field>
+					</field>
+					<item xsi:type="DataSetQuery">
+						<name>Ценовой_лист_БезЦен</name>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>GTIN</dataPath>
+							<field>GTIN</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>ЕдИзмСрокаГодности</dataPath>
+							<field>ЕдИзмСрокаГодности</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>ЕдиницаИзмерения</dataPath>
+							<field>ЕдиницаИзмерения</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>КвантПоставки</dataPath>
+							<field>КвантПоставки</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>КодТовараПоставщика</dataPath>
+							<field>КодТовараПоставщика</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>КоличествоВОдномМесте</dataPath>
+							<field>КоличествоВОдномМесте</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Наименование</dataPath>
+							<field>Наименование</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Номенклатура</dataPath>
+							<field>Номенклатура</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Родитель</dataPath>
+							<field>Родитель</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СрокГодности</dataPath>
+							<field>СрокГодности</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СтавкаНДС</dataPath>
+							<field>СтавкаНДС</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Страна</dataPath>
+							<field>Страна</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Цена</dataPath>
+							<field>Цена</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>РекомендуемаяРозничнаяЦена</dataPath>
+							<field>РекомендуемаяРозничнаяЦена</field>
+						</field>
+						<dataSource>ИсточникДанных1</dataSource>
+						<query>ВЫБРАТЬ
+	СправочникНоменклатура.Родитель КАК Родитель,
+	СправочникНоменклатура.Ссылка КАК Номенклатура,
+	СправочникНоменклатура.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	СправочникНоменклатура.Код КАК КодТовараПоставщика,
+	СправочникНоменклатура.НаименованиеПолное КАК Наименование,
+	СправочникНоменклатура.СтавкаНДС КАК СтавкаНДС,
+	0 КАК Цена,
+	0 КАК РекомендуемаяРозничнаяЦена,
+	Штрихкоды.Штрихкод КАК GTIN,
+	NULL КАК КоличествоВОдномМесте,
+	ЗНАЧЕНИЕ(Справочник.СтраныМира.ПустаяСсылка) КАК Страна,
+	NULL КАК КвантПоставки,
+	NULL КАК ЕдИзмСрокаГодности,
+	NULL КАК СрокГодности
+ИЗ
+	Справочник.Номенклатура КАК СправочникНоменклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ШтрихкодыНоменклатуры КАК Штрихкоды
+		ПО СправочникНоменклатура.Ссылка = Штрихкоды.Номенклатура
+			И (Штрихкоды.Упаковка = СправочникНоменклатура.ЕдиницаИзмерения)
+			И (Штрихкоды.Характеристика = ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка))
+ГДЕ
+	НЕ СправочникНоменклатура.ЭтоГруппа
+	И НЕ СправочникНоменклатура.ПометкаУдаления
+	И НЕ СправочникНоменклатура.ТипНоменклатуры = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Услуга)
+	И &amp;УсловиеОтбораНоменклатуры</query>
+					</item>
+					<item xsi:type="DataSetQuery">
+						<name>Ценовой_лист_СЦенами</name>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>GTIN</dataPath>
+							<field>GTIN</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>ЕдИзмСрокаГодности</dataPath>
+							<field>ЕдИзмСрокаГодности</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>ЕдиницаИзмерения</dataPath>
+							<field>ЕдиницаИзмерения</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>КвантПоставки</dataPath>
+							<field>КвантПоставки</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>КодТовараПоставщика</dataPath>
+							<field>КодТовараПоставщика</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>КоличествоВОдномМесте</dataPath>
+							<field>КоличествоВОдномМесте</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Наименование</dataPath>
+							<field>Наименование</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Номенклатура</dataPath>
+							<field>Номенклатура</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Родитель</dataPath>
+							<field>Родитель</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СрокГодности</dataPath>
+							<field>СрокГодности</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СтавкаНДС</dataPath>
+							<field>СтавкаНДС</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Страна</dataPath>
+							<field>Страна</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Цена</dataPath>
+							<field>Цена</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>РекомендуемаяРозничнаяЦена</dataPath>
+							<field>РекомендуемаяРозничнаяЦена</field>
+						</field>
+						<dataSource>ИсточникДанных1</dataSource>
+						<query>ВЫБРАТЬ
+	ЦеныНоменклатурыСрезПоследних.Номенклатура.Родитель КАК Родитель,
+	ЦеныНоменклатурыСрезПоследних.Номенклатура.Ссылка КАК Номенклатура,
+	ВЫБОР
+		КОГДА ЦеныНоменклатурыСрезПоследних.Упаковка = ЗНАЧЕНИЕ(Справочник.УпаковкиНоменклатуры.ПустаяСсылка)
+			ТОГДА ЦеныНоменклатурыСрезПоследних.Номенклатура.ЕдиницаИзмерения
+		ИНАЧЕ ЦеныНоменклатурыСрезПоследних.Упаковка
+	КОНЕЦ КАК ЕдиницаИзмерения,
+	ЦеныНоменклатурыСрезПоследних.Номенклатура.Код КАК КодТовараПоставщика,
+	ЦеныНоменклатурыСрезПоследних.Номенклатура.НаименованиеПолное КАК Наименование,
+	ЦеныНоменклатурыСрезПоследних.Номенклатура.СтавкаНДС КАК СтавкаНДС,
+	ЦеныНоменклатурыСрезПоследних.Цена,
+	0 КАК РекомендуемаяРозничнаяЦена,
+	Штрихкоды.Штрихкод КАК GTIN,
+	ЦеныНоменклатурыСрезПоследних.Упаковка.Коэффициент КАК КоличествоВОдномМесте,
+	ЗНАЧЕНИЕ(Справочник.СтраныМира.ПустаяСсылка) КАК Страна,
+	NULL КАК КвантПоставки,
+	NULL КАК ЕдИзмСрокаГодности,
+	NULL КАК СрокГодности
+ИЗ
+	РегистрСведений.ЦеныНоменклатуры.СрезПоследних(
+			,
+			ВидЦены = &amp;ТипЦен
+				И НЕ Номенклатура.ПометкаУдаления
+				И НЕ Номенклатура.ТипНоменклатуры = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Услуга)
+				И &amp;УсловиеОтбораНоменклатуры) КАК ЦеныНоменклатурыСрезПоследних
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ШтрихкодыНоменклатуры КАК Штрихкоды
+		ПО ЦеныНоменклатурыСрезПоследних.Номенклатура = Штрихкоды.Номенклатура
+			И (Штрихкоды.Упаковка = ЦеныНоменклатурыСрезПоследних.Упаковка)
+ГДЕ
+	ЦеныНоменклатурыСрезПоследних.Цена &gt; 0</query>
+					</item>
+					<item xsi:type="DataSetQuery">
+						<name>Ценовой_лист_БезЦен_Остатки</name>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>GTIN</dataPath>
+							<field>GTIN</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>ЕдИзмСрокаГодности</dataPath>
+							<field>ЕдИзмСрокаГодности</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>ЕдиницаИзмерения</dataPath>
+							<field>ЕдиницаИзмерения</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>КвантПоставки</dataPath>
+							<field>КвантПоставки</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>КодТовараПоставщика</dataPath>
+							<field>КодТовараПоставщика</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>КоличествоВОдномМесте</dataPath>
+							<field>КоличествоВОдномМесте</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Наименование</dataPath>
+							<field>Наименование</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Номенклатура</dataPath>
+							<field>Номенклатура</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Родитель</dataPath>
+							<field>Родитель</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СрокГодности</dataPath>
+							<field>СрокГодности</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СтавкаНДС</dataPath>
+							<field>СтавкаНДС</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Страна</dataPath>
+							<field>Страна</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Цена</dataPath>
+							<field>Цена</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>КоличествоОстаткаНаКонец</dataPath>
+							<field>КоличествоОстаткаНаКонец</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Помещение</dataPath>
+							<field>Помещение</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>РекомендуемаяРозничнаяЦена</dataPath>
+							<field>РекомендуемаяРозничнаяЦена</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Серия</dataPath>
+							<field>Серия</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Склад</dataPath>
+							<field>Склад</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Характеристика</dataPath>
+							<field>Характеристика</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Назначение</dataPath>
+							<field>Назначение</field>
+						</field>
+						<dataSource>ИсточникДанных1</dataSource>
+						<query>ВЫБРАТЬ
+	СправочникНоменклатура.Родитель КАК Родитель,
+	СправочникНоменклатура.Ссылка КАК Номенклатура,
+	СправочникНоменклатура.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	СправочникНоменклатура.Код КАК КодТовараПоставщика,
+	СправочникНоменклатура.НаименованиеПолное КАК Наименование,
+	СправочникНоменклатура.СтавкаНДС КАК СтавкаНДС,
+	0 КАК Цена,
+	0 КАК РекомендуемаяРозничнаяЦена,
+	Штрихкоды.Штрихкод КАК GTIN,
+	NULL КАК КоличествоВОдномМесте,
+	ЗНАЧЕНИЕ(Справочник.СтраныМира.ПустаяСсылка) КАК Страна,
+	NULL КАК КвантПоставки,
+	NULL КАК ЕдИзмСрокаГодности,
+	NULL КАК СрокГодности,
+	ЕСТЬNULL(ТоварыНаСкладахОстатки.ВНаличииОстаток - ТоварыНаСкладахОстатки.КОтгрузкеОстаток, 0) КАК КоличествоОстаткаНаКонец
+ИЗ
+	Справочник.Номенклатура КАК СправочникНоменклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ШтрихкодыНоменклатуры КАК Штрихкоды
+		ПО СправочникНоменклатура.Ссылка = Штрихкоды.Номенклатура
+			И (Штрихкоды.Упаковка = СправочникНоменклатура.ЕдиницаИзмерения)
+			И (Штрихкоды.Характеристика = ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка))
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.ТоварыНаСкладах.Остатки(
+				,
+				ВЫБОР
+					КОГДА &amp;Склад = НЕОПРЕДЕЛЕНО
+						ТОГДА ИСТИНА
+					ИНАЧЕ Склад В (&amp;Склад)
+				КОНЕЦ) КАК ТоварыНаСкладахОстатки
+		ПО СправочникНоменклатура.Ссылка = ТоварыНаСкладахОстатки.Номенклатура
+ГДЕ
+	НЕ СправочникНоменклатура.ЭтоГруппа
+	И НЕ СправочникНоменклатура.ПометкаУдаления
+	И НЕ СправочникНоменклатура.ТипНоменклатуры = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Услуга)
+	И &amp;УсловиеОтбораНоменклатуры</query>
+					</item>
+					<item xsi:type="DataSetQuery">
+						<name>Ценовой_лист_СЦенами_Остатки</name>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>GTIN</dataPath>
+							<field>GTIN</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>ЕдИзмСрокаГодности</dataPath>
+							<field>ЕдИзмСрокаГодности</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>ЕдиницаИзмерения</dataPath>
+							<field>ЕдиницаИзмерения</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>КвантПоставки</dataPath>
+							<field>КвантПоставки</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>КодТовараПоставщика</dataPath>
+							<field>КодТовараПоставщика</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>КоличествоВОдномМесте</dataPath>
+							<field>КоличествоВОдномМесте</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Наименование</dataPath>
+							<field>Наименование</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Номенклатура</dataPath>
+							<field>Номенклатура</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Родитель</dataPath>
+							<field>Родитель</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СрокГодности</dataPath>
+							<field>СрокГодности</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>СтавкаНДС</dataPath>
+							<field>СтавкаНДС</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Страна</dataPath>
+							<field>Страна</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Цена</dataPath>
+							<field>Цена</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>КоличествоОстаткаНаКонец</dataPath>
+							<field>КоличествоОстаткаНаКонец</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Помещение</dataPath>
+							<field>Помещение</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>РекомендуемаяРозничнаяЦена</dataPath>
+							<field>РекомендуемаяРозничнаяЦена</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Серия</dataPath>
+							<field>Серия</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Склад</dataPath>
+							<field>Склад</field>
+						</field>
+						<field xsi:type="DataSetFieldField">
+							<dataPath>Характеристика</dataPath>
+							<field>Характеристика</field>
+						</field>
+						<dataSource>ИсточникДанных1</dataSource>
+						<query>ВЫБРАТЬ
+	ЦеныНоменклатурыСрезПоследних.Номенклатура.Родитель КАК Родитель,
+	ЦеныНоменклатурыСрезПоследних.Номенклатура.Ссылка КАК Номенклатура,
+	ВЫБОР
+		КОГДА ЦеныНоменклатурыСрезПоследних.Упаковка = ЗНАЧЕНИЕ(Справочник.УпаковкиНоменклатуры.ПустаяСсылка)
+			ТОГДА ЦеныНоменклатурыСрезПоследних.Номенклатура.ЕдиницаИзмерения
+		ИНАЧЕ ЦеныНоменклатурыСрезПоследних.Упаковка
+	КОНЕЦ КАК ЕдиницаИзмерения,
+	ЦеныНоменклатурыСрезПоследних.Номенклатура.Код КАК КодТовараПоставщика,
+	ЦеныНоменклатурыСрезПоследних.Номенклатура.НаименованиеПолное КАК Наименование,
+	ЦеныНоменклатурыСрезПоследних.Номенклатура.СтавкаНДС КАК СтавкаНДС,
+	ЦеныНоменклатурыСрезПоследних.Цена,
+	0 КАК РекомендуемаяРозничнаяЦена,
+	Штрихкоды.Штрихкод КАК GTIN,
+	ЦеныНоменклатурыСрезПоследних.Упаковка.Коэффициент КАК КоличествоВОдномМесте,
+	ЗНАЧЕНИЕ(Справочник.СтраныМира.ПустаяСсылка) КАК Страна,
+	NULL КАК КвантПоставки,
+	NULL КАК ЕдИзмСрокаГодности,
+	NULL КАК СрокГодности,
+	ЕСТЬNULL(ТоварыНаСкладахОстатки.ВНаличииОстаток - ТоварыНаСкладахОстатки.КОтгрузкеОстаток, 0) КАК КоличествоОстаткаНаКонец
+ИЗ
+	РегистрСведений.ЦеныНоменклатуры.СрезПоследних(
+			,
+			ВидЦены = &amp;ТипЦен
+				И НЕ Номенклатура.ПометкаУдаления
+				И НЕ Номенклатура.ТипНоменклатуры = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Услуга)
+				И &amp;УсловиеОтбораНоменклатуры) КАК ЦеныНоменклатурыСрезПоследних
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ШтрихкодыНоменклатуры КАК Штрихкоды
+		ПО ЦеныНоменклатурыСрезПоследних.Номенклатура = Штрихкоды.Номенклатура
+			И (Штрихкоды.Упаковка = ЦеныНоменклатурыСрезПоследних.Упаковка)
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.ТоварыНаСкладах.Остатки(
+				,
+				ВЫБОР
+					КОГДА &amp;Склад = НЕОПРЕДЕЛЕНО
+						ТОГДА ИСТИНА
+					ИНАЧЕ Склад В (&amp;Склад)
+				КОНЕЦ) КАК ТоварыНаСкладахОстатки
+		ПО ЦеныНоменклатурыСрезПоследних.Номенклатура = ТоварыНаСкладахОстатки.Номенклатура
+ГДЕ
+	ЦеныНоменклатурыСрезПоследних.Цена &gt; 0</query>
+					</item>
+				</item>
+			</item>
+			<item xsi:type="DataSetUnion">
+				<name>ЗапросПоCOINVOIC</name>
+				<item xsi:type="DataSetQuery">
+					<name>Заказ_Реализация_СФ</name>
+					<dataSource>ИсточникДанных1</dataSource>
+					<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	докКорректировка.Ссылка КАК Корректировка,
+	ВЫБОР
+		КОГДА НЕ докКорректировка.Проведен
+			ТОГДА докКорректировка.Ссылка
+		ИНАЧЕ ЕСТЬNULL(докСчетФактура.Ссылка, докКорректировка.Ссылка)
+	КОНЕЦ КАК Документ,
+	ВЫБОР
+		КОГДА НЕ докКорректировка.Проведен
+			ТОГДА "Провести Корректировка реализации"
+		КОГДА докСчетФактура.Ссылка ЕСТЬ NULL
+			ТОГДА "Создать Счет-фактура по корректировке"
+		КОГДА НЕ докСчетФактура.Ссылка.Проведен
+			ТОГДА "Провести Счет-фактура по корректировке"
+		КОГДА докСчетФактура.Корректировочный &lt;&gt; ИСТИНА
+			ТОГДА "Отправить счет-фактуру"
+		ИНАЧЕ "Отправить корректировочный счет-фактуру"
+	КОНЕЦ КАК ТребуемоеДействие,
+	ВЫБОР
+		КОГДА докСчетФактура.Корректировочный &lt;&gt; ИСТИНА
+			ТОГДА "INVOIC"
+		ИНАЧЕ "COINVOIC"
+	КОНЕЦ КАК ТипСообщения,
+	докКорректировка.ДокументОснование КАК ДокументРеализации,
+	ТаблицаКэшПартнеровКонтрагентов.Партнер КАК Партнер,
+	докКорректировка.Дата КАК ДатаКорректировки
+ПОМЕСТИТЬ табКорректировки
+ИЗ
+	ТаблицаКэшПартнеровКонтрагентов КАК ТаблицаКэшПартнеровКонтрагентов
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.КорректировкаРеализации КАК докКорректировка
+			ЛЕВОЕ СОЕДИНЕНИЕ Документ.СчетФактураВыданный КАК докСчетФактура
+				ЛЕВОЕ СОЕДИНЕНИЕ Справочник.КонтурEDI_Сообщения КАК КонтурEDI_Сообщения
+				ПО докСчетФактура.Ссылка = КонтурEDI_Сообщения.Документ
+			ПО докКорректировка.Ссылка = докСчетФактура.ДокументОснование
+				И (докСчетФактура.ПометкаУдаления = ЛОЖЬ)
+		ПО ТаблицаКэшПартнеровКонтрагентов.Контрагент = докКорректировка.Контрагент
+			И (ТаблицаКэшПартнеровКонтрагентов.COINVOIC = ИСТИНА)
+ГДЕ
+	НЕ докКорректировка.ПометкаУдаления
+	И докКорректировка.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И ВЫБОР
+			КОГДА &amp;ТолькоТребуемые
+				ТОГДА КонтурEDI_Сообщения.Ссылка ЕСТЬ NULL
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табКорректировки.Корректировка КАК Корректировка,
+	СчетФактураВыданный.Ссылка КАК ОсновнойСчетФактура
+ПОМЕСТИТЬ табОсновныхСчетовФактур
+ИЗ
+	табКорректировки КАК табКорректировки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.СчетФактураВыданный КАК СчетФактураВыданный
+		ПО табКорректировки.ДокументРеализации = СчетФактураВыданный.ДокументОснование
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табКорректировки.Корректировка КАК Корректировка,
+	КорректировкаРеализации.Ссылка КАК ПредыдущаяКорректировка,
+	КорректировкаРеализации.Дата КАК ДатаПредыдущейКорректировки
+ПОМЕСТИТЬ табВсехПредыдущихКорректировок
+ИЗ
+	табКорректировки КАК табКорректировки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.КорректировкаРеализации КАК КорректировкаРеализации
+		ПО табКорректировки.ДокументРеализации = КорректировкаРеализации.ДокументОснование
+			И (НЕ КорректировкаРеализации.ПометкаУдаления)
+			И табКорректировки.Корректировка &lt;&gt; КорректировкаРеализации.Ссылка
+			И табКорректировки.ДатаКорректировки &gt;= КорректировкаРеализации.Дата
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табПредыдущихКорректировок.Корректировка КАК Корректировка,
+	МАКСИМУМ(табПредыдущихКорректировок.ДатаПредыдущейКорректировки) КАК ДатаПредыдущейКорректировки
+ПОМЕСТИТЬ табДляОпределенияПредыдущейКорректировки
+ИЗ
+	табВсехПредыдущихКорректировок КАК табПредыдущихКорректировок
+
+СГРУППИРОВАТЬ ПО
+	табПредыдущихКорректировок.Корректировка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табПредыдущихКорректировок.Корректировка КАК Корректировка,
+	табПредыдущихКорректировок.ПредыдущаяКорректировка КАК ПредыдущаяКорректировка
+ПОМЕСТИТЬ табПредыдущихКорректировок
+ИЗ
+	табВсехПредыдущихКорректировок КАК табПредыдущихКорректировок
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ табДляОпределенияПредыдущейКорректировки КАК табДляОпределенияПредыдущейКорректировки
+		ПО табПредыдущихКорректировок.Корректировка = табДляОпределенияПредыдущейКорректировки.Корректировка
+			И табПредыдущихКорректировок.ДатаПредыдущейКорректировки = табДляОпределенияПредыдущейКорректировки.ДатаПредыдущейКорректировки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табПредыдущихКорректировок.Корректировка КАК Корректировка,
+	СчетФактураВыданный.Ссылка КАК ПредыдущийДокумент
+ПОМЕСТИТЬ табПредыдущихДокументов
+ИЗ
+	табПредыдущихКорректировок КАК табПредыдущихКорректировок
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.СчетФактураВыданный КАК СчетФактураВыданный
+		ПО табПредыдущихКорректировок.ПредыдущаяКорректировка = СчетФактураВыданный.ДокументОснование
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	табОсновныхСчетовФактур.Корректировка,
+	табОсновныхСчетовФактур.ОсновнойСчетФактура
+ИЗ
+	табОсновныхСчетовФактур КАК табОсновныхСчетовФактур
+		ЛЕВОЕ СОЕДИНЕНИЕ табПредыдущихКорректировок КАК табПредыдущихКорректировок
+		ПО табОсновныхСчетовФактур.Корректировка = табПредыдущихКорректировок.Корректировка
+ГДЕ
+	табПредыдущихКорректировок.Корректировка ЕСТЬ NULL
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	КонтурEDI_Сообщения.Ссылка КАК Сообщение,
+	табПредыдущихДокументов.Корректировка КАК Корректировка,
+	табПредыдущихДокументов.ПредыдущийДокумент КАК ПредыдущийДокумент
+ПОМЕСТИТЬ табРазрешенийНаОтправку
+ИЗ
+	табПредыдущихДокументов КАК табПредыдущихДокументов
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.КонтурEDI_Сообщения КАК КонтурEDI_Сообщения
+		ПО табПредыдущихДокументов.ПредыдущийДокумент = КонтурEDI_Сообщения.Документ
+			И (НЕ КонтурEDI_Сообщения.Статус В (&amp;БлокирующиеСтатусыПервичногоINVOIC))
+			И (КонтурEDI_Сообщения.ТипСообщения = "COINVOIC"
+				ИЛИ КонтурEDI_Сообщения.ТипСообщения = "INVOIC")
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;ТолькоТребуемые
+				ТОГДА КонтурEDI_Сообщения.Ссылка ЕСТЬ НЕ NULL 
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табКорректировки.Корректировка КАК Корректировка,
+	табКорректировки.Документ КАК Документ,
+	табКорректировки.ТребуемоеДействие КАК ТребуемоеДействие,
+	табКорректировки.ТипСообщения КАК ТипСообщения,
+	табРазрешенийНаОтправку.Сообщение КАК Сообщение,
+	табКорректировки.Партнер КАК Партнер,
+	табРазрешенийНаОтправку.ПредыдущийДокумент КАК ПредыдущийДокумент
+ПОМЕСТИТЬ ВТ_КоррИспрСФ
+ИЗ
+	табКорректировки КАК табКорректировки
+		ЛЕВОЕ СОЕДИНЕНИЕ табРазрешенийНаОтправку КАК табРазрешенийНаОтправку
+		ПО табКорректировки.Корректировка = табРазрешенийНаОтправку.Корректировка
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;ТолькоТребуемые
+				ТОГДА табРазрешенийНаОтправку.Корректировка ЕСТЬ НЕ NULL 
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табКорректировки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табПредыдущихДокументов
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табОсновныхСчетовФактур
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табДляОпределенияПредыдущейКорректировки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табВсехПредыдущихКорректировок
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табПредыдущихКорректировок
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табРазрешенийНаОтправку</query>
+				</item>
+				<item xsi:type="DataSetQuery">
+					<name>Реализация_СФ</name>
+					<dataSource>ИсточникДанных1</dataSource>
+					<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	докКорректировка.Ссылка КАК Корректировка,
+	ВЫБОР
+		КОГДА НЕ докКорректировка.Проведен
+			ТОГДА докКорректировка.Ссылка
+		ИНАЧЕ ЕСТЬNULL(докСчетФактура.Ссылка, докКорректировка.Ссылка)
+	КОНЕЦ КАК Документ,
+	ВЫБОР
+		КОГДА НЕ докКорректировка.Проведен
+			ТОГДА "Провести Корректировка реализации"
+		КОГДА докСчетФактура.Ссылка ЕСТЬ NULL
+			ТОГДА "Создать Счет-фактура по корректировке"
+		КОГДА НЕ докСчетФактура.Ссылка.Проведен
+			ТОГДА "Провести Счет-фактура по корректировке"
+		КОГДА докСчетФактура.Корректировочный &lt;&gt; ИСТИНА
+			ТОГДА "Отправить счет-фактуру"
+		ИНАЧЕ "Отправить корректировочный счет-фактуру"
+	КОНЕЦ КАК ТребуемоеДействие,
+	ВЫБОР
+		КОГДА докСчетФактура.Корректировочный &lt;&gt; ИСТИНА
+			ТОГДА "INVOIC"
+		ИНАЧЕ "COINVOIC"
+	КОНЕЦ КАК ТипСообщения,
+	докКорректировка.ДокументОснование КАК ДокументРеализации,
+	ТаблицаКэшПартнеровКонтрагентов.Партнер КАК Партнер,
+	докКорректировка.Дата КАК ДатаКорректировки
+ПОМЕСТИТЬ табКорректировки
+ИЗ
+	ТаблицаКэшПартнеровКонтрагентов КАК ТаблицаКэшПартнеровКонтрагентов
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.КорректировкаРеализации КАК докКорректировка
+			ЛЕВОЕ СОЕДИНЕНИЕ Документ.СчетФактураВыданный КАК докСчетФактура
+				ЛЕВОЕ СОЕДИНЕНИЕ Справочник.КонтурEDI_Сообщения КАК КонтурEDI_Сообщения
+				ПО докСчетФактура.Ссылка = КонтурEDI_Сообщения.Документ
+			ПО докКорректировка.Ссылка = докСчетФактура.ДокументОснование
+				И (докСчетФактура.ПометкаУдаления = ЛОЖЬ)
+		ПО ТаблицаКэшПартнеровКонтрагентов.Контрагент = докКорректировка.Контрагент
+			И (ТаблицаКэшПартнеровКонтрагентов.COINVOIC = ИСТИНА)
+ГДЕ
+	НЕ докКорректировка.ПометкаУдаления
+	И докКорректировка.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И ВЫБОР
+			КОГДА &amp;ТолькоТребуемые
+				ТОГДА КонтурEDI_Сообщения.Ссылка ЕСТЬ NULL
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табКорректировки.Корректировка КАК Корректировка,
+	СчетФактураВыданный.Ссылка КАК ОсновнойСчетФактура
+ПОМЕСТИТЬ табОсновныхСчетовФактур
+ИЗ
+	табКорректировки КАК табКорректировки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.СчетФактураВыданный КАК СчетФактураВыданный
+		ПО табКорректировки.ДокументРеализации = СчетФактураВыданный.ДокументОснование
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табКорректировки.Корректировка КАК Корректировка,
+	КорректировкаРеализации.Ссылка КАК ПредыдущаяКорректировка,
+	КорректировкаРеализации.Дата КАК ДатаПредыдущейКорректировки
+ПОМЕСТИТЬ табВсехПредыдущихКорректировок
+ИЗ
+	табКорректировки КАК табКорректировки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.КорректировкаРеализации КАК КорректировкаРеализации
+		ПО табКорректировки.ДокументРеализации = КорректировкаРеализации.ДокументОснование
+			И (НЕ КорректировкаРеализации.ПометкаУдаления)
+			И табКорректировки.Корректировка &lt;&gt; КорректировкаРеализации.Ссылка
+			И табКорректировки.ДатаКорректировки &gt;= КорректировкаРеализации.Дата
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табПредыдущихКорректировок.Корректировка КАК Корректировка,
+	МАКСИМУМ(табПредыдущихКорректировок.ДатаПредыдущейКорректировки) КАК ДатаПредыдущейКорректировки
+ПОМЕСТИТЬ табДляОпределенияПредыдущейКорректировки
+ИЗ
+	табВсехПредыдущихКорректировок КАК табПредыдущихКорректировок
+
+СГРУППИРОВАТЬ ПО
+	табПредыдущихКорректировок.Корректировка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табПредыдущихКорректировок.Корректировка КАК Корректировка,
+	табПредыдущихКорректировок.ПредыдущаяКорректировка КАК ПредыдущаяКорректировка
+ПОМЕСТИТЬ табПредыдущихКорректировок
+ИЗ
+	табВсехПредыдущихКорректировок КАК табПредыдущихКорректировок
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ табДляОпределенияПредыдущейКорректировки КАК табДляОпределенияПредыдущейКорректировки
+		ПО табПредыдущихКорректировок.Корректировка = табДляОпределенияПредыдущейКорректировки.Корректировка
+			И табПредыдущихКорректировок.ДатаПредыдущейКорректировки = табДляОпределенияПредыдущейКорректировки.ДатаПредыдущейКорректировки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табПредыдущихКорректировок.Корректировка КАК Корректировка,
+	СчетФактураВыданный.Ссылка КАК ПредыдущийДокумент
+ПОМЕСТИТЬ табПредыдущихДокументов
+ИЗ
+	табПредыдущихКорректировок КАК табПредыдущихКорректировок
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.СчетФактураВыданный КАК СчетФактураВыданный
+		ПО табПредыдущихКорректировок.ПредыдущаяКорректировка = СчетФактураВыданный.ДокументОснование
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	табОсновныхСчетовФактур.Корректировка,
+	табОсновныхСчетовФактур.ОсновнойСчетФактура
+ИЗ
+	табОсновныхСчетовФактур КАК табОсновныхСчетовФактур
+		ЛЕВОЕ СОЕДИНЕНИЕ табПредыдущихКорректировок КАК табПредыдущихКорректировок
+		ПО табОсновныхСчетовФактур.Корректировка = табПредыдущихКорректировок.Корректировка
+ГДЕ
+	табПредыдущихКорректировок.Корректировка ЕСТЬ NULL
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	КонтурEDI_Сообщения.Ссылка КАК Сообщение,
+	табПредыдущихДокументов.Корректировка КАК Корректировка,
+	табПредыдущихДокументов.ПредыдущийДокумент КАК ПредыдущийДокумент
+ПОМЕСТИТЬ табРазрешенийНаОтправку
+ИЗ
+	табПредыдущихДокументов КАК табПредыдущихДокументов
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.КонтурEDI_Сообщения КАК КонтурEDI_Сообщения
+		ПО табПредыдущихДокументов.ПредыдущийДокумент = КонтурEDI_Сообщения.Документ
+			И (НЕ КонтурEDI_Сообщения.Статус В (&amp;БлокирующиеСтатусыПервичногоINVOIC))
+			И (КонтурEDI_Сообщения.ТипСообщения = "COINVOIC"
+				ИЛИ КонтурEDI_Сообщения.ТипСообщения = "INVOIC")
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;ТолькоТребуемые
+				ТОГДА КонтурEDI_Сообщения.Ссылка ЕСТЬ НЕ NULL 
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табКорректировки.Корректировка КАК Корректировка,
+	табКорректировки.Документ КАК Документ,
+	табКорректировки.ТребуемоеДействие КАК ТребуемоеДействие,
+	табКорректировки.ТипСообщения КАК ТипСообщения,
+	табРазрешенийНаОтправку.Сообщение КАК Сообщение,
+	табКорректировки.Партнер КАК Партнер,
+	табРазрешенийНаОтправку.ПредыдущийДокумент КАК ПредыдущийДокумент
+ПОМЕСТИТЬ ВТ_КоррИспрСФ
+ИЗ
+	табКорректировки КАК табКорректировки
+		ЛЕВОЕ СОЕДИНЕНИЕ табРазрешенийНаОтправку КАК табРазрешенийНаОтправку
+		ПО табКорректировки.Корректировка = табРазрешенийНаОтправку.Корректировка
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;ТолькоТребуемые
+				ТОГДА табРазрешенийНаОтправку.Корректировка ЕСТЬ НЕ NULL 
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табКорректировки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табПредыдущихДокументов
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табОсновныхСчетовФактур
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табДляОпределенияПредыдущейКорректировки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табВсехПредыдущихКорректировок
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табПредыдущихКорректировок
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табРазрешенийНаОтправку</query>
+				</item>
+				<item xsi:type="DataSetQuery">
+					<name>Заказ_Реализация</name>
+					<dataSource>ИсточникДанных1</dataSource>
+					<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	докКорректировка.Ссылка КАК Корректировка,
+	ВЫБОР
+		КОГДА НЕ докКорректировка.Проведен
+			ТОГДА докКорректировка.Ссылка
+		КОГДА докКорректировка.ХозяйственнаяОперация &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.КорректировкаПоСогласованиюСторон)
+			ТОГДА ЕСТЬNULL(докСчетФактура.Ссылка, докКорректировка.Ссылка)
+		ИНАЧЕ докКорректировка.Ссылка
+	КОНЕЦ КАК Документ,
+	ВЫБОР
+		КОГДА НЕ докКорректировка.Проведен
+			ТОГДА "Провести Корректировка реализации"
+		КОГДА докКорректировка.ХозяйственнаяОперация &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.КорректировкаПоСогласованиюСторон)
+			ТОГДА ВЫБОР
+					КОГДА докСчетФактура.Ссылка ЕСТЬ NULL 
+						ТОГДА "Создать Счет-фактура по корректировке"
+					КОГДА НЕ докСчетФактура.Ссылка.Проведен
+						ТОГДА "Провести Счет-фактура по корректировке"
+					ИНАЧЕ "Отправить счет-фактуру"
+				КОНЕЦ
+		ИНАЧЕ "Отправить корректировочный счет-фактуру"
+	КОНЕЦ КАК ТребуемоеДействие,
+	ВЫБОР
+		КОГДА докКорректировка.ХозяйственнаяОперация = ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.КорректировкаПоСогласованиюСторон)
+			ТОГДА "COINVOIC"
+		КОГДА докСчетФактура.Корректировочный &lt;&gt; ИСТИНА
+			ТОГДА "INVOIC"
+		ИНАЧЕ "COINVOIC"
+	КОНЕЦ КАК ТипСообщения,
+	докКорректировка.ДокументОснование КАК ДокументРеализации,
+	ТаблицаКэшПартнеровКонтрагентов.Партнер КАК Партнер,
+	докКорректировка.Дата КАК ДатаКорректировки
+ПОМЕСТИТЬ табКорректировки
+ИЗ
+	ТаблицаКэшПартнеровКонтрагентов КАК ТаблицаКэшПартнеровКонтрагентов
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.КорректировкаРеализации КАК докКорректировка
+			ЛЕВОЕ СОЕДИНЕНИЕ Документ.СчетФактураВыданный КАК докСчетФактура
+				ЛЕВОЕ СОЕДИНЕНИЕ Справочник.КонтурEDI_Сообщения КАК КонтурEDI_Сообщения
+				ПО докСчетФактура.Ссылка = КонтурEDI_Сообщения.Документ
+			ПО докКорректировка.Ссылка = докСчетФактура.ДокументОснование
+				И (докСчетФактура.ПометкаУдаления = ЛОЖЬ)
+		ПО ТаблицаКэшПартнеровКонтрагентов.Контрагент = докКорректировка.Контрагент
+			И (ТаблицаКэшПартнеровКонтрагентов.COINVOIC = ИСТИНА)
+ГДЕ
+	НЕ докКорректировка.ПометкаУдаления
+	И докКорректировка.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И ВЫБОР
+			КОГДА &amp;ТолькоТребуемые
+				ТОГДА КонтурEDI_Сообщения.Ссылка ЕСТЬ NULL 
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табКорректировки.Корректировка,
+	табКорректировки.Документ,
+	табКорректировки.ТребуемоеДействие,
+	табКорректировки.ТипСообщения,
+	табКорректировки.ДокументРеализации,
+	табКорректировки.Партнер,
+	табКорректировки.ДатаКорректировки
+ПОМЕСТИТЬ табКорректировкиСообщения
+ИЗ
+	табКорректировки КАК табКорректировки
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.КонтурEDI_Сообщения КАК КонтурEDI_Сообщения
+		ПО табКорректировки.Документ = КонтурEDI_Сообщения.Документ
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;ТолькоТребуемые
+				ТОГДА КонтурEDI_Сообщения.Ссылка ЕСТЬ NULL 
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табКорректировкиСообщения.Корректировка КАК Корректировка,
+	табКорректировкиСообщения.ДокументРеализации КАК ОсновнойСчетФактура
+ПОМЕСТИТЬ табОсновныхСчетовФактур
+ИЗ
+	табКорректировкиСообщения КАК табКорректировкиСообщения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табКорректировкиСообщения.Корректировка КАК Корректировка,
+	КорректировкаРеализации.Ссылка КАК ПредыдущаяКорректировка,
+	КорректировкаРеализации.Дата КАК ДатаПредыдущейКорректировки
+ПОМЕСТИТЬ табВсехПредыдущихКорректировок
+ИЗ
+	табКорректировкиСообщения КАК табКорректировкиСообщения
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.КорректировкаРеализации КАК КорректировкаРеализации
+		ПО табКорректировкиСообщения.ДокументРеализации = КорректировкаРеализации.ДокументОснование
+			И (НЕ КорректировкаРеализации.ПометкаУдаления)
+			И табКорректировкиСообщения.Корректировка &lt;&gt; КорректировкаРеализации.Ссылка
+			И табКорректировкиСообщения.ДатаКорректировки &gt;= КорректировкаРеализации.Дата
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табПредыдущихКорректировок.Корректировка КАК Корректировка,
+	МАКСИМУМ(табПредыдущихКорректировок.ДатаПредыдущейКорректировки) КАК ДатаПредыдущейКорректировки
+ПОМЕСТИТЬ табДляОпределенияПредыдущейКорректировки
+ИЗ
+	табВсехПредыдущихКорректировок КАК табПредыдущихКорректировок
+
+СГРУППИРОВАТЬ ПО
+	табПредыдущихКорректировок.Корректировка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табПредыдущихКорректировок.Корректировка КАК Корректировка,
+	табПредыдущихКорректировок.ПредыдущаяКорректировка КАК ПредыдущаяКорректировка
+ПОМЕСТИТЬ табПредыдущихКорректировок
+ИЗ
+	табВсехПредыдущихКорректировок КАК табПредыдущихКорректировок
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ табДляОпределенияПредыдущейКорректировки КАК табДляОпределенияПредыдущейКорректировки
+		ПО табПредыдущихКорректировок.Корректировка = табДляОпределенияПредыдущейКорректировки.Корректировка
+			И табПредыдущихКорректировок.ДатаПредыдущейКорректировки = табДляОпределенияПредыдущейКорректировки.ДатаПредыдущейКорректировки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табПредыдущихКорректировок.Корректировка КАК Корректировка,
+	СчетФактураВыданный.Ссылка КАК ПредыдущийДокумент
+ПОМЕСТИТЬ табПредыдущихДокументов
+ИЗ
+	табПредыдущихКорректировок КАК табПредыдущихКорректировок
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.СчетФактураВыданный КАК СчетФактураВыданный
+		ПО табПредыдущихКорректировок.ПредыдущаяКорректировка = СчетФактураВыданный.ДокументОснование
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	табОсновныхСчетовФактур.Корректировка,
+	табОсновныхСчетовФактур.ОсновнойСчетФактура
+ИЗ
+	табОсновныхСчетовФактур КАК табОсновныхСчетовФактур
+		ЛЕВОЕ СОЕДИНЕНИЕ табПредыдущихКорректировок КАК табПредыдущихКорректировок
+		ПО табОсновныхСчетовФактур.Корректировка = табПредыдущихКорректировок.Корректировка
+ГДЕ
+	табПредыдущихКорректировок.Корректировка ЕСТЬ NULL 
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	КонтурEDI_Сообщения.Ссылка КАК Сообщение,
+	табПредыдущихДокументов.Корректировка КАК Корректировка,
+	табПредыдущихДокументов.ПредыдущийДокумент КАК ПредыдущийДокумент
+ПОМЕСТИТЬ табРазрешенийНаОтправку
+ИЗ
+	табПредыдущихДокументов КАК табПредыдущихДокументов
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.КонтурEDI_Сообщения КАК КонтурEDI_Сообщения
+		ПО табПредыдущихДокументов.ПредыдущийДокумент = КонтурEDI_Сообщения.Документ
+			И (НЕ КонтурEDI_Сообщения.Статус В (&amp;БлокирующиеСтатусыПервичногоINVOIC))
+			И (КонтурEDI_Сообщения.ТипСообщения = "COINVOIC"
+				ИЛИ КонтурEDI_Сообщения.ТипСообщения = "INVOIC")
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;ТолькоТребуемые
+				ТОГДА КонтурEDI_Сообщения.Ссылка ЕСТЬ НЕ NULL 
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табКорректировки.Корректировка КАК Корректировка,
+	табКорректировки.Документ КАК Документ,
+	табКорректировки.ТребуемоеДействие КАК ТребуемоеДействие,
+	табКорректировки.ТипСообщения КАК ТипСообщения,
+	табРазрешенийНаОтправку.Сообщение КАК Сообщение,
+	табКорректировки.Партнер КАК Партнер,
+	табРазрешенийНаОтправку.ПредыдущийДокумент КАК ПредыдущийДокумент
+ПОМЕСТИТЬ ВТ_КоррИспрСФ
+ИЗ
+	табКорректировки КАК табКорректировки
+		ЛЕВОЕ СОЕДИНЕНИЕ табРазрешенийНаОтправку КАК табРазрешенийНаОтправку
+		ПО табКорректировки.Корректировка = табРазрешенийНаОтправку.Корректировка
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;ТолькоТребуемые
+				ТОГДА табРазрешенийНаОтправку.Корректировка ЕСТЬ НЕ NULL 
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табКорректировки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табПредыдущихДокументов
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табОсновныхСчетовФактур
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табДляОпределенияПредыдущейКорректировки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табВсехПредыдущихКорректировок
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табПредыдущихКорректировок
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табРазрешенийНаОтправку</query>
+				</item>
+				<item xsi:type="DataSetQuery">
+					<name>Реализация</name>
+					<dataSource>ИсточникДанных1</dataSource>
+					<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	докКорректировка.Ссылка КАК Корректировка,
+	ВЫБОР
+		КОГДА НЕ докКорректировка.Проведен
+			ТОГДА докКорректировка.Ссылка
+		КОГДА докКорректировка.ХозяйственнаяОперация &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.КорректировкаПоСогласованиюСторон)
+			ТОГДА ЕСТЬNULL(докСчетФактура.Ссылка, докКорректировка.Ссылка)
+		ИНАЧЕ докКорректировка.Ссылка
+	КОНЕЦ КАК Документ,
+	ВЫБОР
+		КОГДА НЕ докКорректировка.Проведен
+			ТОГДА "Провести Корректировка реализации"
+		КОГДА докКорректировка.ХозяйственнаяОперация &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.КорректировкаПоСогласованиюСторон)
+			ТОГДА ВЫБОР
+					КОГДА докСчетФактура.Ссылка ЕСТЬ NULL 
+						ТОГДА "Создать Счет-фактура по корректировке"
+					КОГДА НЕ докСчетФактура.Ссылка.Проведен
+						ТОГДА "Провести Счет-фактура по корректировке"
+					ИНАЧЕ "Отправить счет-фактуру"
+				КОНЕЦ
+		ИНАЧЕ "Отправить корректировочный счет-фактуру"
+	КОНЕЦ КАК ТребуемоеДействие,
+	ВЫБОР
+		КОГДА докКорректировка.ХозяйственнаяОперация = ЗНАЧЕНИЕ(Перечисление.ХозяйственныеОперации.КорректировкаПоСогласованиюСторон)
+			ТОГДА "COINVOIC"
+		КОГДА докСчетФактура.Корректировочный &lt;&gt; ИСТИНА
+			ТОГДА "INVOIC"
+		ИНАЧЕ "COINVOIC"
+	КОНЕЦ КАК ТипСообщения,
+	докКорректировка.ДокументОснование КАК ДокументРеализации,
+	ТаблицаКэшПартнеровКонтрагентов.Партнер КАК Партнер,
+	докКорректировка.Дата КАК ДатаКорректировки
+ПОМЕСТИТЬ табКорректировки
+ИЗ
+	ТаблицаКэшПартнеровКонтрагентов КАК ТаблицаКэшПартнеровКонтрагентов
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.КорректировкаРеализации КАК докКорректировка
+			ЛЕВОЕ СОЕДИНЕНИЕ Документ.СчетФактураВыданный КАК докСчетФактура
+				ЛЕВОЕ СОЕДИНЕНИЕ Справочник.КонтурEDI_Сообщения КАК КонтурEDI_Сообщения
+				ПО докСчетФактура.Ссылка = КонтурEDI_Сообщения.Документ
+			ПО докКорректировка.Ссылка = докСчетФактура.ДокументОснование
+				И (докСчетФактура.ПометкаУдаления = ЛОЖЬ)
+		ПО ТаблицаКэшПартнеровКонтрагентов.Контрагент = докКорректировка.Контрагент
+			И (ТаблицаКэшПартнеровКонтрагентов.COINVOIC = ИСТИНА)
+ГДЕ
+	НЕ докКорректировка.ПометкаУдаления
+	И докКорректировка.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И ВЫБОР
+			КОГДА &amp;ТолькоТребуемые
+				ТОГДА КонтурEDI_Сообщения.Ссылка ЕСТЬ NULL 
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табКорректировки.Корректировка,
+	табКорректировки.Документ,
+	табКорректировки.ТребуемоеДействие,
+	табКорректировки.ТипСообщения,
+	табКорректировки.ДокументРеализации,
+	табКорректировки.Партнер,
+	табКорректировки.ДатаКорректировки
+ПОМЕСТИТЬ табКорректировкиСообщения
+ИЗ
+	табКорректировки КАК табКорректировки
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.КонтурEDI_Сообщения КАК КонтурEDI_Сообщения
+		ПО табКорректировки.Документ = КонтурEDI_Сообщения.Документ
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;ТолькоТребуемые
+				ТОГДА КонтурEDI_Сообщения.Ссылка ЕСТЬ NULL 
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табКорректировкиСообщения.Корректировка КАК Корректировка,
+	табКорректировкиСообщения.ДокументРеализации КАК ОсновнойСчетФактура
+ПОМЕСТИТЬ табОсновныхСчетовФактур
+ИЗ
+	табКорректировкиСообщения КАК табКорректировкиСообщения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табКорректировкиСообщения.Корректировка КАК Корректировка,
+	КорректировкаРеализации.Ссылка КАК ПредыдущаяКорректировка,
+	КорректировкаРеализации.Дата КАК ДатаПредыдущейКорректировки
+ПОМЕСТИТЬ табВсехПредыдущихКорректировок
+ИЗ
+	табКорректировкиСообщения КАК табКорректировкиСообщения
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.КорректировкаРеализации КАК КорректировкаРеализации
+		ПО табКорректировкиСообщения.ДокументРеализации = КорректировкаРеализации.ДокументОснование
+			И (НЕ КорректировкаРеализации.ПометкаУдаления)
+			И табКорректировкиСообщения.Корректировка &lt;&gt; КорректировкаРеализации.Ссылка
+			И табКорректировкиСообщения.ДатаКорректировки &gt;= КорректировкаРеализации.Дата
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табПредыдущихКорректировок.Корректировка КАК Корректировка,
+	МАКСИМУМ(табПредыдущихКорректировок.ДатаПредыдущейКорректировки) КАК ДатаПредыдущейКорректировки
+ПОМЕСТИТЬ табДляОпределенияПредыдущейКорректировки
+ИЗ
+	табВсехПредыдущихКорректировок КАК табПредыдущихКорректировок
+
+СГРУППИРОВАТЬ ПО
+	табПредыдущихКорректировок.Корректировка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табПредыдущихКорректировок.Корректировка КАК Корректировка,
+	табПредыдущихКорректировок.ПредыдущаяКорректировка КАК ПредыдущаяКорректировка
+ПОМЕСТИТЬ табПредыдущихКорректировок
+ИЗ
+	табВсехПредыдущихКорректировок КАК табПредыдущихКорректировок
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ табДляОпределенияПредыдущейКорректировки КАК табДляОпределенияПредыдущейКорректировки
+		ПО табПредыдущихКорректировок.Корректировка = табДляОпределенияПредыдущейКорректировки.Корректировка
+			И табПредыдущихКорректировок.ДатаПредыдущейКорректировки = табДляОпределенияПредыдущейКорректировки.ДатаПредыдущейКорректировки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табПредыдущихКорректировок.Корректировка КАК Корректировка,
+	СчетФактураВыданный.Ссылка КАК ПредыдущийДокумент
+ПОМЕСТИТЬ табПредыдущихДокументов
+ИЗ
+	табПредыдущихКорректировок КАК табПредыдущихКорректировок
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.СчетФактураВыданный КАК СчетФактураВыданный
+		ПО табПредыдущихКорректировок.ПредыдущаяКорректировка = СчетФактураВыданный.ДокументОснование
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	табОсновныхСчетовФактур.Корректировка,
+	табОсновныхСчетовФактур.ОсновнойСчетФактура
+ИЗ
+	табОсновныхСчетовФактур КАК табОсновныхСчетовФактур
+		ЛЕВОЕ СОЕДИНЕНИЕ табПредыдущихКорректировок КАК табПредыдущихКорректировок
+		ПО табОсновныхСчетовФактур.Корректировка = табПредыдущихКорректировок.Корректировка
+ГДЕ
+	табПредыдущихКорректировок.Корректировка ЕСТЬ NULL 
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	КонтурEDI_Сообщения.Ссылка КАК Сообщение,
+	табПредыдущихДокументов.Корректировка КАК Корректировка,
+	табПредыдущихДокументов.ПредыдущийДокумент КАК ПредыдущийДокумент
+ПОМЕСТИТЬ табРазрешенийНаОтправку
+ИЗ
+	табПредыдущихДокументов КАК табПредыдущихДокументов
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.КонтурEDI_Сообщения КАК КонтурEDI_Сообщения
+		ПО табПредыдущихДокументов.ПредыдущийДокумент = КонтурEDI_Сообщения.Документ
+			И (НЕ КонтурEDI_Сообщения.Статус В (&amp;БлокирующиеСтатусыПервичногоINVOIC))
+			И (КонтурEDI_Сообщения.ТипСообщения = "COINVOIC"
+				ИЛИ КонтурEDI_Сообщения.ТипСообщения = "INVOIC")
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;ТолькоТребуемые
+				ТОГДА КонтурEDI_Сообщения.Ссылка ЕСТЬ НЕ NULL 
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	табКорректировки.Корректировка КАК Корректировка,
+	табКорректировки.Документ КАК Документ,
+	табКорректировки.ТребуемоеДействие КАК ТребуемоеДействие,
+	табКорректировки.ТипСообщения КАК ТипСообщения,
+	табРазрешенийНаОтправку.Сообщение КАК Сообщение,
+	табКорректировки.Партнер КАК Партнер,
+	табРазрешенийНаОтправку.ПредыдущийДокумент КАК ПредыдущийДокумент
+ПОМЕСТИТЬ ВТ_КоррИспрСФ
+ИЗ
+	табКорректировки КАК табКорректировки
+		ЛЕВОЕ СОЕДИНЕНИЕ табРазрешенийНаОтправку КАК табРазрешенийНаОтправку
+		ПО табКорректировки.Корректировка = табРазрешенийНаОтправку.Корректировка
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;ТолькоТребуемые
+				ТОГДА табРазрешенийНаОтправку.Корректировка ЕСТЬ НЕ NULL 
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табКорректировки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табПредыдущихДокументов
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табОсновныхСчетовФактур
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табДляОпределенияПредыдущейКорректировки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табВсехПредыдущихКорректировок
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табПредыдущихКорректировок
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ табРазрешенийНаОтправку</query>
+				</item>
+			</item>
+		</item>
+	</dataSet>
+	<parameter>
+		<name>Ссылка</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ссылка</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ПриобретениеТоваровУслуг</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<parameter>
+		<name>УсловиеОтбораНоменклатуры</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Условие отбора номенклатуры</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Склад</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Склад</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Склады</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<parameter>
+		<name>БлокирующиеСтатусыПервичногоINVOIC</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Блокирующие статусы первичного INVOIC</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>40</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</valueType>
+		<value xsi:type="xs:string"/>
+		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ТолькоТребуемые</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Только требуемые</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows"/>
+	</settingsVariant>
+</DataCompositionSchema>
