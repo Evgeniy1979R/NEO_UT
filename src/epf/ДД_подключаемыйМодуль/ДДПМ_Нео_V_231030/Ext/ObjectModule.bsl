@@ -113,11 +113,19 @@
 	Попытка
 		Для Каждого эл из Параметры.Документ.СлужебнаяИнформация.Контент.table.items Цикл
 			т = СтрШаблон("%1;ГТИН: %2;",эл.Product,эл.GTIN);
-			Для Каждого элItemIdentificationNumbers	из эл.ItemIdentificationNumbers Цикл
+			Для Каждого элItemIdentificationNumbers	из эл.ItemIdentificationNumbers Цикл  
+				Количество = элItemIdentificationNumbers.MarkedItemsQuantity;
+				Если  Количество = Неопределено Тогда // пробуем получить количество из TransPackageId	"020468000019533137243103000096974"	Строка
+					СтрокаКоличество = Прав(элItemIdentificationNumbers.TransPackageId,13);
+					Если Лев(СтрокаКоличество,4) = "3103" Тогда
+						Количество = Число(Прав(СтрокаКоличество,9))/1000;
+					КонецЕсли;
+					
+				КонецЕсли;
 				т = СтрШаблон("%1
-				|		Партия: %2; Количество: %3",т,элItemIdentificationNumbers.BatchCode, элItemIdentificationNumbers.MarkedItemsQuantity	);
+				|		Партия: %2; Количество: %3",т,элItemIdentificationNumbers.BatchCode, Количество	);
 				мПартии.Добавить(
-				Новый Структура("gtin,part,quant",эл.GTIN,элItemIdentificationNumbers.BatchCode,элItemIdentificationNumbers.MarkedItemsQuantity )
+				Новый Структура("gtin,part,quant",эл.GTIN,элItemIdentificationNumbers.BatchCode,Количество)
 				);
 			КонецЦикла;
 			СтрокаКомментарий = СтрокаКомментарий + ?(СтрокаКомментарий = "","",Символы.ПС)+т;
