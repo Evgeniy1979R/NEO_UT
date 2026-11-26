@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created with Liquid Studio 2020 (https://www.liquid-technologies.com)-->
+<xs:schema elementFormDefault="qualified" targetNamespace="https://StyleExpo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- Корневой элемент 
+    <xs:element name="Файл">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Документ" xmlns:q1="https://StyleExpo" type="q1:ДокументТип" minOccurs="1" maxOccurs="unbounded" />
+            </xs:sequence>
+            <xs:attribute name="ВерсияФормата" fixed="1.0" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element> -->
+    <xs:complexType name="Файл">
+        <xs:sequence>
+            <xs:element xmlns:q1="https://StyleExpo" name="Документ" type="q1:ДокументТип" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="ВерсияФормата" fixed="1.0" type="xs:string" use="required" />
+    </xs:complexType>
+    <!-- Документ: поставка или отгрузка -->
+    <xs:complexType name="ДокументТип">
+        <xs:sequence>
+            <xs:element name="ТипДокумента">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Поставка" />
+                        <xs:enumeration value="Отгрузка" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q2="https://StyleExpo" name="ДатаДокумента" type="xs:date" />
+            <xs:element xmlns:q3="https://StyleExpo" name="Заказчик" type="q3:ГрузополучательТип" />
+            <xs:element xmlns:q4="https://StyleExpo" name="Грузополучатель" type="q4:ГрузополучательТип" minOccurs="0" maxOccurs="1" />
+            <xs:element xmlns:q5="https://StyleExpo" name="Основание" type="q5:ОснованиеТип" minOccurs="0" />
+            <xs:element xmlns:q6="https://StyleExpo" name="НомерЗаказа" minOccurs="0" maxOccurs="1">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q7="https://StyleExpo" name="НомерНакладной" minOccurs="0" maxOccurs="1">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q8="https://StyleExpo" name="ТемпературныйРежим" type="q8:ТемпературныйРежимТип" minOccurs="0" maxOccurs="1" />
+            <xs:element xmlns:q9="https://StyleExpo" name="Товары" type="q9:ТоварыТип" />
+            <xs:element xmlns:q10="https://StyleExpo" name="Комментарий" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <!-- Заказчик 
+    <xs:complexType name="ЗаказчикТип">
+        <xs:sequence>
+            <xs:element xmlns:q11="https://StyleExpo" name="Наименование" type="q11:Строка150Тип" />
+            <xs:element xmlns:q12="https://StyleExpo" name="ИНН" type="q12:ИННТип" />
+            <xs:element xmlns:q13="https://StyleExpo" name="КПП" type="q13:КППТип" minOccurs="0" />
+        </xs:sequence>
+    </xs:complexType> -->
+    <!-- Грузополучатель -->
+    <xs:complexType name="ГрузополучательТип">
+        <xs:sequence>
+            <xs:element xmlns:q14="https://StyleExpo" name="Наименование">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q15="https://StyleExpo" name="ИНН">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="12" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q16="https://StyleExpo" name="КПП" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="9" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q17="https://StyleExpo" name="Идентификатор" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="36" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q18="https://StyleExpo" name="Адрес" type="q18:АдресТип" minOccurs="0" />
+        </xs:sequence>
+    </xs:complexType>
+    <!-- Адрес -->
+    <xs:complexType name="АдресТип">
+        <xs:sequence>
+            <xs:element xmlns:q19="https://StyleExpo" name="Индекс" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="6" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q20="https://StyleExpo" name="КодРегиона" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q21="https://StyleExpo" name="Район" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q22="https://StyleExpo" name="Город" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q23="https://StyleExpo" name="НаселПункт" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q24="https://StyleExpo" name="Улица" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q25="https://StyleExpo" name="Дом" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q26="https://StyleExpo" name="Корпус" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q27="https://StyleExpo" name="Квартира" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q28="https://StyleExpo" name="ИныеСвед" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <!-- Основание -->
+    <xs:complexType name="ОснованиеТип">
+        <xs:sequence>
+            <xs:element xmlns:q29="https://StyleExpo" name="Наименование">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="128" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q30="https://StyleExpo" name="Номер">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q31="https://StyleExpo" name="Дата" type="xs:date" />
+        </xs:sequence>
+    </xs:complexType>
+    <!-- Список товаров -->
+    <xs:complexType name="ТоварыТип">
+        <xs:sequence>
+            <xs:element xmlns:q32="https://StyleExpo" name="Строка" type="q32:СтрокаТовараТип" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <!-- Строка товара -->
+    <xs:complexType name="СтрокаТовараТип">
+        <xs:sequence>
+            <xs:element xmlns:q33="https://StyleExpo" name="НомерСтроки" type="xs:integer" />
+            <xs:element xmlns:q34="https://StyleExpo" name="Товар" type="q34:КарточкаТовараТип" />
+            <xs:element xmlns:q35="https://StyleExpo" name="Упаковка" type="q35:УпаковкаТип" />
+            <xs:element xmlns:q36="https://StyleExpo" name="ДатаПроизводства" type="xs:date" />
+            <xs:element xmlns:q37="https://StyleExpo" name="ГоденДо" type="xs:date" />
+            <xs:element xmlns:q38="https://StyleExpo" name="Количество">
+                <xs:simpleType>
+                    <xs:restriction base="xs:decimal">
+                        <xs:fractionDigits value="3" />
+                        <xs:totalDigits value="15" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q39="https://StyleExpo" name="КоличествоУпаковок">
+                <xs:simpleType>
+                    <xs:restriction base="xs:decimal">
+                        <xs:totalDigits value="15" />
+                        <xs:fractionDigits value="3" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q40="https://StyleExpo" name="Цена" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:decimal">
+                        <xs:fractionDigits value="2" />
+                        <xs:totalDigits value="15" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q41="https://StyleExpo" name="СтавкаНДС" type="q41:СтавкаНДСТип" minOccurs="0" />
+        </xs:sequence>
+    </xs:complexType>
+    <!-- Карточка товара -->
+    <xs:complexType name="КарточкаТовараТип">
+        <xs:sequence>
+            <xs:element xmlns:q42="https://StyleExpo" name="Артикул">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q43="https://StyleExpo" name="Идентификатор" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="36" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q44="https://StyleExpo" name="Наименование">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q45="https://StyleExpo" name="КодЕдиницыИзмерения">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="4" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q46="https://StyleExpo" name="СрокГодности" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:decimal">
+                        <xs:fractionDigits value="2" />
+                        <xs:totalDigits value="15" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <!-- Упаковка -->
+    <xs:complexType name="УпаковкаТип">
+        <xs:sequence>
+            <xs:element xmlns:q47="https://StyleExpo" name="КоличествоВУпаковке">
+                <xs:simpleType>
+                    <xs:restriction base="xs:decimal">
+                        <xs:fractionDigits value="3" />
+                        <xs:totalDigits value="15" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element xmlns:q48="https://StyleExpo" name="КодЕдиницыИзмерения">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="4" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <!-- Простые типы -->
+    <xs:simpleType name="ДатаТип">
+        <xs:restriction base="xs:date">
+            <xs:pattern value="[0-9]{4}-[0-9]{2}-[0-9]{2}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Строка2Тип">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="2" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Строка6Тип">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="6" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Строка20Тип">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="20" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Строка50Тип">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Строка128Тип">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="128" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Строка150Тип">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="150" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Строка255Тип">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="255" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Строка1000Тип">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="1000" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="КомментарийТип">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="500" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ИННТип">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{10}|[0-9]{12}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="КППТип">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{9}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ИдентификаторТип">
+        <xs:restriction base="xs:string">
+            <xs:length value="36" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="НомерСтрокиТип">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+            <xs:totalDigits value="10" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="КоличествоТип">
+        <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="15" />
+            <xs:fractionDigits value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ЦенаТип">
+        <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="15" />
+            <xs:fractionDigits value="2" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="СрокГодностиТип">
+        <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="15" />
+            <xs:fractionDigits value="2" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="КодЕдиницыТип">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="4" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ТемпературныйРежимТип">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ЗамороженнаяПродукция" />
+            <xs:enumeration value="ОхлажденнаяПродукция" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="СтавкаНДСТип">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="БезНДС" />
+            <xs:enumeration value="НДС0" />
+            <xs:enumeration value="НДС5" />
+            <xs:enumeration value="НДС7" />
+            <xs:enumeration value="НДС10" />
+            <xs:enumeration value="НДС22" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
