@@ -51,11 +51,6 @@
 				<Event name="StartChoice">КаталогВыгрузкиНачалоВыбора</Event>
 			</Events>
 		</InputField>
-		<CheckBoxField name="ОстанавливатьсяПриОшибке" id="77">
-			<DataPath>ОстанавливатьсяПриОшибке</DataPath>
-			<ContextMenu name="ОстанавливатьсяПриОшибкеКонтекстноеМеню" id="78"/>
-			<ExtendedTooltip name="ОстанавливатьсяПриОшибкеРасширеннаяПодсказка" id="79"/>
-		</CheckBoxField>
 		<Pages name="ГруппаСтраницы" id="1">
 			<Title>
 				<v8:item>
@@ -118,6 +113,12 @@
 									<CommandName>Form.Command.ЗаполнитьРеализации</CommandName>
 									<ExtendedTooltip name="ЗаполнитьРеализацииРасширеннаяПодсказка" id="32"/>
 								</Button>
+								<InputField name="НомерСохраненияРеализаций" id="302">
+									<DataPath>НомерСохраненияРеализаций</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="НомерСохраненияРеализацийКонтекстноеМеню" id="303"/>
+									<ExtendedTooltip name="НомерСохраненияРеализацийРасширеннаяПодсказка" id="304"/>
+								</InputField>
 							</ChildItems>
 						</UsualGroup>
 						<Table name="СписокРеализаций" id="9">
@@ -388,184 +389,6 @@
 						</Button>
 					</ChildItems>
 				</Page>
-				<Page name="ВыгрузкаНоменклатуры" id="5">
-					<Visible>false</Visible>
-					<Enabled>false</Enabled>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Выгрузка номенклатуры</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Выгрузка номенклатуры</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Group>Vertical</Group>
-					<ScrollOnCompress>false</ScrollOnCompress>
-					<ExtendedTooltip name="ВыгрузкаНоменклатурыРасширеннаяПодсказка" id="6"/>
-					<ChildItems>
-						<Table name="СписокГруппНоменклатуры" id="38">
-							<Representation>List</Representation>
-							<RowSelectionMode>Cell</RowSelectionMode>
-							<Header>false</Header>
-							<HorizontalLinesBWA>false</HorizontalLinesBWA>
-							<VerticalLinesBWA>false</VerticalLinesBWA>
-							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
-							<AutoInsertNewRow>true</AutoInsertNewRow>
-							<DataPath>СписокГруппНоменклатуры</DataPath>
-							<RowPictureDataPath>СписокГруппНоменклатуры.Picture</RowPictureDataPath>
-							<ContextMenu name="СписокГруппНоменклатурыКонтекстноеМеню" id="39"/>
-							<AutoCommandBar name="СписокГруппНоменклатурыКоманднаяПанель" id="40"/>
-							<ExtendedTooltip name="СписокГруппНоменклатурыРасширеннаяПодсказка" id="41"/>
-							<SearchStringAddition name="СписокГруппНоменклатурыСтрокаПоиска" id="42">
-								<AdditionSource>
-									<Item>СписокГруппНоменклатуры</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="СписокГруппНоменклатурыСтрокаПоискаКонтекстноеМеню" id="43"/>
-								<ExtendedTooltip name="СписокГруппНоменклатурыСтрокаПоискаРасширеннаяПодсказка" id="44"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="СписокГруппНоменклатурыСостояниеПросмотра" id="45">
-								<AdditionSource>
-									<Item>СписокГруппНоменклатуры</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="СписокГруппНоменклатурыСостояниеПросмотраКонтекстноеМеню" id="46"/>
-								<ExtendedTooltip name="СписокГруппНоменклатурыСостояниеПросмотраРасширеннаяПодсказка" id="47"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="СписокГруппНоменклатурыУправлениеПоиском" id="48">
-								<AdditionSource>
-									<Item>СписокГруппНоменклатуры</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="СписокГруппНоменклатурыУправлениеПоискомКонтекстноеМеню" id="49"/>
-								<ExtendedTooltip name="СписокГруппНоменклатурыУправлениеПоискомРасширеннаяПодсказка" id="50"/>
-							</SearchControlAddition>
-							<ChildItems>
-								<InputField name="СписокГруппНоменклатурыЗначение" id="51">
-									<DataPath>СписокГруппНоменклатуры.Value</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ChoiceParameters>
-										<app:item name="Отбор.ЭтоГруппа">
-											<app:value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation/>
-												<Value xsi:type="xs:boolean">true</Value>
-											</app:value>
-										</app:item>
-									</ChoiceParameters>
-									<ContextMenu name="СписокГруппНоменклатурыЗначениеКонтекстноеМеню" id="52"/>
-									<ExtendedTooltip name="СписокГруппНоменклатурыЗначениеРасширеннаяПодсказка" id="53"/>
-								</InputField>
-							</ChildItems>
-						</Table>
-						<Button name="ВыгрузитьНоменклатуру" id="56">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ВыгрузитьНоменклатуру</CommandName>
-							<ExtendedTooltip name="ВыгрузитьНоменклатуруРасширеннаяПодсказка" id="57"/>
-						</Button>
-					</ChildItems>
-				</Page>
-				<Page name="ВыгрузкаАдресов" id="7">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Выгрузка адресов</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Выгрузка адресов</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Group>Vertical</Group>
-					<ScrollOnCompress>false</ScrollOnCompress>
-					<ExtendedTooltip name="ВыгрузкаАдресовРасширеннаяПодсказка" id="8"/>
-				</Page>
-				<Page name="ГруппаАдреса" id="80">
-					<Visible>false</Visible>
-					<Enabled>false</Enabled>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Выгрузка адресов</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа адреса</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Group>Vertical</Group>
-					<ScrollOnCompress>false</ScrollOnCompress>
-					<ExtendedTooltip name="ГруппаАдресаРасширеннаяПодсказка" id="81"/>
-					<ChildItems>
-						<Button name="ЗаполнитьАдреса" id="98">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ЗаполнитьАдреса</CommandName>
-							<ExtendedTooltip name="ЗаполнитьАдресаРасширеннаяПодсказка" id="99"/>
-						</Button>
-						<Table name="СписокАдресов" id="82">
-							<Representation>List</Representation>
-							<RowSelectionMode>Cell</RowSelectionMode>
-							<Header>false</Header>
-							<HorizontalLinesBWA>false</HorizontalLinesBWA>
-							<VerticalLinesBWA>false</VerticalLinesBWA>
-							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
-							<AutoInsertNewRow>true</AutoInsertNewRow>
-							<DataPath>СписокАдресов</DataPath>
-							<RowPictureDataPath>СписокАдресов.Picture</RowPictureDataPath>
-							<ContextMenu name="СписокАдресовКонтекстноеМеню" id="83"/>
-							<AutoCommandBar name="СписокАдресовКоманднаяПанель" id="84"/>
-							<ExtendedTooltip name="СписокАдресовРасширеннаяПодсказка" id="85"/>
-							<SearchStringAddition name="СписокАдресовСтрокаПоиска" id="86">
-								<AdditionSource>
-									<Item>СписокАдресов</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="СписокАдресовСтрокаПоискаКонтекстноеМеню" id="87"/>
-								<ExtendedTooltip name="СписокАдресовСтрокаПоискаРасширеннаяПодсказка" id="88"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="СписокАдресовСостояниеПросмотра" id="89">
-								<AdditionSource>
-									<Item>СписокАдресов</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="СписокАдресовСостояниеПросмотраКонтекстноеМеню" id="90"/>
-								<ExtendedTooltip name="СписокАдресовСостояниеПросмотраРасширеннаяПодсказка" id="91"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="СписокАдресовУправлениеПоиском" id="92">
-								<AdditionSource>
-									<Item>СписокАдресов</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="СписокАдресовУправлениеПоискомКонтекстноеМеню" id="93"/>
-								<ExtendedTooltip name="СписокАдресовУправлениеПоискомРасширеннаяПодсказка" id="94"/>
-							</SearchControlAddition>
-							<ChildItems>
-								<InputField name="СписокАдресовЗначение" id="95">
-									<DataPath>СписокАдресов.Value</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<AutoEditMode>true</AutoEditMode>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="СписокАдресовЗначениеКонтекстноеМеню" id="96"/>
-									<ExtendedTooltip name="СписокАдресовЗначениеРасширеннаяПодсказка" id="97"/>
-								</InputField>
-							</ChildItems>
-						</Table>
-						<Button name="ВыгрузитьАдреса" id="100">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ВыгрузитьАдреса</CommandName>
-							<ExtendedTooltip name="ВыгрузитьАдресаРасширеннаяПодсказка" id="101"/>
-						</Button>
-					</ChildItems>
-				</Page>
 			</ChildItems>
 		</Pages>
 	</ChildItems>
@@ -623,25 +446,6 @@
 				<Field>КаталогВыгрузки</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="СписокГруппНоменклатуры" id="5">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Список групп номенклатуры</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>v8:ValueListType</v8:Type>
-			</Type>
-			<SavedData>true</SavedData>
-			<FillCheck>ShowError</FillCheck>
-			<Save>
-				<Field>СписокГруппНоменклатуры</Field>
-			</Save>
-			<Settings xsi:type="v8:TypeDescription">
-				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
-			</Settings>
-		</Attribute>
 		<Attribute name="Организация" id="6">
 			<Title>
 				<v8:item>
@@ -672,22 +476,6 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="НомерСохраненияНоменклатуры" id="8">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Номер файла</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:decimal</v8:Type>
-				<v8:NumberQualifiers>
-					<v8:Digits>10</v8:Digits>
-					<v8:FractionDigits>0</v8:FractionDigits>
-					<v8:AllowedSign>Any</v8:AllowedSign>
-				</v8:NumberQualifiers>
-			</Type>
-		</Attribute>
 		<Attribute name="ОстанавливатьсяПриОшибке" id="9">
 			<Title>
 				<v8:item>
@@ -698,20 +486,6 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
-		</Attribute>
-		<Attribute name="СписокАдресов" id="10">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Список адресов</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>v8:ValueListType</v8:Type>
-			</Type>
-			<Settings xsi:type="v8:TypeDescription">
-				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
-			</Settings>
 		</Attribute>
 		<Attribute name="Склад" id="11">
 			<Title>
